@@ -1,0 +1,79 @@
+heat_template_version: 2015-04-30
+
+description: Simple template to deploy a single test instance
+
+resources:
+
+  ext_net:
+    type: OS::Neutron::ProviderNet
+    properties:
+      name: "ext_net"
+      physical_network: "datacentre"
+      network_type: "vlan"
+      segmentation_id: "2801"
+      shared: True
+
+  ext_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+#      ip_version: 6
+      name: "ext_subnet"
+      network_id: { get_resource: ext_net }
+#      cidr: "2600:5001:2830:30::/64"
+#      allocation_pools: [{"start":"2600:5001:2830:30:0:0:1:0", "end":"2600:5001:2830:30:0:0:1:ffff" }]
+#      gateway_ip: "2600:5001:2830:30::1"
+      cidr: "192.168.110.0/24"
+      cidr: "10.217.162.128/27"
+      allocation_pools: [{"start":"10.217.162.132", "end":"10.217.162.137"}]
+      gateway_ip: "10.217.162.129"
+      enable_dhcp: True
+
+  test_security:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      name: "test_security"
+      rules:
+        - protocol: tcp
+          direction: "ingress"
+          remote_ip_prefix: 0.0.0.0/0
+          port_range_min: 22
+          port_range_max: 22
+        - protocol: icmp
+          direction: "ingress"
+          remote_ip_prefix: 0.0.0.0/0
+
+  instance_port:
+    type: OS::Neutron::Port
+    properties:
+      network_id: { get_resource: ext_net }
+      security_groups:
+        - default
+        - { get_resource: test_security }
+#      fixed_ips: [{subnet_id: { get_resource: ext_subnet }, ip_address: "172.31.50.53"}]
+
+#  test_volume:
+#    type: OS::Cinder::Volume
+#    properties:
+#      size: 10
+#      name: "test_volume"
+
+  test_instance:
+    type: OS::Nova::Server
+    properties:
+      name: "test_instance"
+      flavor: test
+      image: cirros
+      networks: 
+         - port: { get_resource: instance_port }
+#        - network: {get_resource: ext_net}
+
+#  volume_attachment:
+#    type: OS::Cinder::VolumeAttachment
+#    properties:
+#      volume_id: { get_resource: test_volume }
+#      instance_uuid: { get_resource: test_instance }
+
+outputs:
+  instance_ip:
+    description: IP address of the deployed compute instance
+    value: { get_attr: [test_instance, first_address] }

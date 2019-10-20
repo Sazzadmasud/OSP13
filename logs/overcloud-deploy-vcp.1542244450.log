@@ -1,0 +1,7 @@
+Waiting for messages on queue 'tripleo' with no timeout.
+[Errno 13] Permission denied: '/tmp/tripleoclient-5GvOy9/tripleo-heat-templates/plan-environment.yaml'
+Started Mistral Workflow tripleo.validations.v1.check_pre_deployment_validations. Execution ID: 35a1db3e-602e-4438-bf5e-c908ed89f297
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: 90afbaac-7646-4721-98b7-e5f6f48c392d
+Plan updated.

@@ -1,0 +1,590 @@
+Waiting for messages on queue 'tripleo' with no timeout.
+Started Mistral Workflow tripleo.validations.v1.check_pre_deployment_validations. Execution ID: 20cce126-b31f-434c-9c25-5c2c081e505c
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: 0c645734-d804-44ad-94cf-8106a0fb95de
+Plan updated.
+Processing templates in the directory /tmp/tripleoclient-LMkShZ/tripleo-heat-templates
+Started Mistral Workflow tripleo.plan_management.v1.get_deprecated_parameters. Execution ID: 23470dce-5a04-498f-9e3e-14e58536c984
+WARNING: Following parameters are deprecated and still defined. Deprecated parameters will be removed soon!
+  HostCpusList
+  NovaComputeIPs
+WARNING: Following parameters are defined but not used in plan. Could be possible that parameter is valid but currently not used.
+  GlanceIPv6
+  RamWeightMultiplier
+  DiskWeightMultiplier
+  DockerMysqlClientConfigImage
+  CephIPv6
+  MongoDbIPv6
+  NeutronSriovNumVFs
+  NeutronSupportedPCIVendorDevs
+  NeutronPhysicalDevMappings
+  CinderBackupBackend
+  IOOpsWeightMultiplier
+Deploying templates in the directory /tmp/tripleoclient-LMkShZ/tripleo-heat-templates
+Started Mistral Workflow tripleo.deployment.v1.deploy_plan. Execution ID: e83eeb1d-330c-450e-a39d-b26b0148a5a0
+2018-11-20 23:32:03Z [DefaultPasswords]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:04Z [Networks]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:05Z [vcp-Networks-ugj5fvoggz4y]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:05Z [DefaultPasswords]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:05Z [vcp-Networks-ugj5fvoggz4y.StorageNetwork]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:05Z [ServiceNetMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:06Z [vcp-ServiceNetMap-poeapcfhpghy]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:06Z [vcp-ServiceNetMap-poeapcfhpghy]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:06Z [vcp-Networks-ugj5fvoggz4y.StorageMgmtNetwork]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:06Z [vcp-Networks-ugj5fvoggz4y-StorageNetwork-imjwcqypk7nt]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:07Z [ServiceNetMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:07Z [vcp-Networks-ugj5fvoggz4y-StorageMgmtNetwork-kwo6df7bpsxb]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:07Z [vcp-Networks-ugj5fvoggz4y-StorageNetwork-imjwcqypk7nt]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:08Z [vcp-Networks-ugj5fvoggz4y-StorageMgmtNetwork-kwo6df7bpsxb]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:08Z [vcp-Networks-ugj5fvoggz4y.StorageNetwork]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:09Z [vcp-Networks-ugj5fvoggz4y.TenantNetwork]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:09Z [vcp-Networks-ugj5fvoggz4y.StorageMgmtNetwork]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:10Z [vcp-Networks-ugj5fvoggz4y.InternalApiNetwork]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:10Z [vcp-Networks-ugj5fvoggz4y-TenantNetwork-xmeobotpkcu3]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:11Z [vcp-Networks-ugj5fvoggz4y.ExternalNetwork]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:11Z [vcp-Networks-ugj5fvoggz4y-InternalApiNetwork-u3kklir45a3m]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:11Z [vcp-Networks-ugj5fvoggz4y-TenantNetwork-xmeobotpkcu3]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:12Z [vcp-Networks-ugj5fvoggz4y-ExternalNetwork-3eydviqsao6e]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:12Z [vcp-Networks-ugj5fvoggz4y.TenantNetwork]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:12Z [vcp-Networks-ugj5fvoggz4y-InternalApiNetwork-u3kklir45a3m]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:13Z [vcp-Networks-ugj5fvoggz4y.InternalApiNetwork]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:13Z [vcp-Networks-ugj5fvoggz4y-ExternalNetwork-3eydviqsao6e]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:14Z [vcp-Networks-ugj5fvoggz4y.ExternalNetwork]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:14Z [vcp-Networks-ugj5fvoggz4y]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:15Z [Networks]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:19Z [InternalApiVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:19Z [RedisVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:19Z [PublicVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:19Z [StorageVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:20Z [StorageMgmtVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:21Z [vcp-RedisVirtualIP-7wyb3eajgg5v]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:22Z [vcp-PublicVirtualIP-ax55tu43chxv]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:22Z [vcp-StorageVirtualIP-2iw5umyww6qn]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:22Z [vcp-InternalApiVirtualIP-2oat37lghbpv]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:22Z [vcp-StorageMgmtVirtualIP-giks5nwr2xf5]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:23Z [vcp-RedisVirtualIP-7wyb3eajgg5v]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:23Z [RedisVirtualIP]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:23Z [vcp-StorageMgmtVirtualIP-giks5nwr2xf5]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:23Z [vcp-InternalApiVirtualIP-2oat37lghbpv]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:23Z [vcp-PublicVirtualIP-ax55tu43chxv]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:23Z [vcp-StorageVirtualIP-2iw5umyww6qn]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:24Z [PublicVirtualIP]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:24Z [StorageVirtualIP]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:24Z [InternalApiVirtualIP]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:24Z [StorageMgmtVirtualIP]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:25Z [VipMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:26Z [vcp-VipMap-yjyoxegpiyrv]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:26Z [vcp-VipMap-yjyoxegpiyrv]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:32:27Z [VipMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:27Z [EndpointMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:29Z [EndpointMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:30Z [ControllerServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:30Z [ObjectStorageServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:30Z [BlockStorageServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:30Z [ComputeServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:30Z [CephStorageServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:31Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:31Z [vcp-ControllerServiceChain-bulk7hcchz2w]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:31Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:31Z [vcp-ComputeServiceChain-fvtiff77vf2f]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:31Z [vcp-CephStorageServiceChain-jl3o7ao2bira]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:31Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:31Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:31Z [vcp-ComputeServiceChain-fvtiff77vf2f.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:31Z [vcp-ControllerServiceChain-bulk7hcchz2w.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:31Z [vcp-CephStorageServiceChain-jl3o7ao2bira.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:32Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:32Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:32Z [vcp-ControllerServiceChain-bulk7hcchz2w.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:32Z [vcp-ComputeServiceChain-fvtiff77vf2f.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:32Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:33Z [vcp-ComputeServiceChain-fvtiff77vf2f.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:33Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:33Z [vcp-CephStorageServiceChain-jl3o7ao2bira.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:33Z [vcp-CephStorageServiceChain-jl3o7ao2bira.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:34Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:34Z [vcp-ControllerServiceChain-bulk7hcchz2w.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:34Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:34Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.19]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:35Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:35Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:35Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.21]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:36Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.21]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:37Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.24]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:37Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.19]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:37Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.19]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:38Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.38]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:38Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.21]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:38Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.14]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:38Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.21]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:38Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.20]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:39Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.24]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:39Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.20]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:39Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.18]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:39Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.38]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:39Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.12]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:40Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.14]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:40Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.20]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:40Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.19]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:40Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.9]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:40Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.18]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:41Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.12]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:41Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.7]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:42Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.8]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:42Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.18]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:42Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.22]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:43Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.9]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:43Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.7]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:43Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.21]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:43Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.8]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:43Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.22]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:44Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.36]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:44Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.25]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:44Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.11]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:44Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:32:44Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.22]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:45Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.20]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:45Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.18]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:45Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.23]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:45Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.36]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:45Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.20]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:45Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.21]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:45Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.22]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:46Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.25]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:46Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.11]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:46Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.23]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:47Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.23]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:47Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.24]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:47Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.20]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:47Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.13]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:48Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.23]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:48Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.138]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:48Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.2]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:49Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.5]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:49Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.47]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:50Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.138]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:50Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.22]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:50Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.2]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:50Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.8]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:51Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.47]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:51Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.101]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:51Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.12]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:51Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.16]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:52Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.49]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:52Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.11]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:52Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.5]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:52Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.23]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:53Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.10]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:53Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.24]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:53Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.13]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:53Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.2]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:53Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.22]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:53Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.37]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:53Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.16]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:54Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.11]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:55Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.63]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:55Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.12]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:55Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.2]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:55Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.6]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:55Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.11]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:55Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.37]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:56Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.24]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:56Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.17]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:56Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.8]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:57Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.63]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:57Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.24]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:57Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.25]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:57Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.101]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:58Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.23]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:58Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.6]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:58Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.12]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:58Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.18]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:58Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.34]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:58Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.17]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:58Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.10]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:59Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.2]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:32:59Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.25]: UPDATE_COMPLETE  state changed
+2018-11-20 23:32:59Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.11]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:00Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.23]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:00Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri.12]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:00Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.3]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:00Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.10]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:00Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.41]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:01Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.7]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:01Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.15]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:01Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.11]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:01Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.18]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:01Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.23]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:01Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.34]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:01Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.2]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:01Z [vcp-CephStorageServiceChain-jl3o7ao2bira-ServiceChain-z3vlfphhxyri]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:02Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7.10]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:02Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.13]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:02Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.41]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:02Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo-ServiceChain-f5op55fikbo7]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:02Z [vcp-CephStorageServiceChain-jl3o7ao2bira.ServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:02Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.2]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:03Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo.ServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:03Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.49]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:03Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.2]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:03Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.13]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:03Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.15]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:04Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.121]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:04Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.11]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:04Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum.3]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:04Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.35]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:05Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy-ServiceChain-ul3yuufceyum]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:05Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy.ServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:06Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.35]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:07Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.22]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:10Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.7]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:11Z [vcp-CephStorageServiceChain-jl3o7ao2bira]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:11Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.121]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:11Z [CephStorageServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:11Z [vcp-ObjectStorageServiceChain-xocnvbiiovuo]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:11Z [ObjectStorageServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:12Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.103]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:12Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.15]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:12Z [ObjectStorageServiceChainRoleData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:12Z [ObjectStorageServiceChainRoleData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:13Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.131]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:14Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.33]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:14Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.22]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:15Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.48]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:15Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.131]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:15Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.33]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:15Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.15]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:16Z [vcp-BlockStorageServiceChain-pk5x5kfikzmy]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:16Z [BlockStorageServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:16Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.137]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:19Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.24]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:19Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.26]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:19Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.137]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:20Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.106]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:20Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.48]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:21Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.103]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:24Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.82]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:24Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl.26]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:24Z [vcp-ComputeServiceChain-fvtiff77vf2f-ServiceChain-wqv6beubukpl]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:24Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.52]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:25Z [vcp-ComputeServiceChain-fvtiff77vf2f.ServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:25Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.82]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:25Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.24]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:27Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.106]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:28Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.75]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:30Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.80]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:31Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.55]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:31Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.80]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:32Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.3]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:32Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.75]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:32Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.64]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:33Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.52]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:36Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.50]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:38Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.3]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:39Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.55]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:39Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.64]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:39Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.135]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:41Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.120]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:42Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.108]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:43Z [vcp-ComputeServiceChain-fvtiff77vf2f]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:33:44Z [ComputeServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:44Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.50]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:45Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.105]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:45Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.135]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:46Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.120]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:47Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.108]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:48Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.36]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:50Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.132]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:51Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.99]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:52Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.105]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:53Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.36]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:54Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.139]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:55Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.97]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:33:55Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.132]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:55Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.139]: UPDATE_COMPLETE  state changed
+2018-11-20 23:33:59Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.99]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:01Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.4]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:02Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.119]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:03Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.86]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:03Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.97]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:06Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.4]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:07Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.15]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:07Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.86]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:08Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.119]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:13Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.15]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:13Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.83]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:14Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.11]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:15Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.46]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:16Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.11]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:17Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.87]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:19Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.38]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:19Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.83]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:21Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.46]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:22Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.16]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:23Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.87]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:26Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.134]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:27Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.130]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:27Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.16]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:28Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.13]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:28Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.38]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:28Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.134]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:28Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.130]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:29Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.54]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:29Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.13]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:34Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.54]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:35Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.100]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:38Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.90]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:39Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.107]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:40Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.56]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:41Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.107]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:44Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.90]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:44Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.56]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:46Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.100]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:47Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.61]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:51Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.94]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:51Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.61]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:52Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.104]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:55Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.53]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:34:57Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.94]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:57Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.53]: UPDATE_COMPLETE  state changed
+2018-11-20 23:34:59Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.118]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:00Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.2]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:01Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.118]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:01Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.104]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:03Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.14]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:04Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.140]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:05Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.2]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:05Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.14]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:06Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.140]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:06Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.1]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:08Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.37]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:12Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.12]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:14Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.12]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:14Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.81]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:15Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.37]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:15Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.51]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:17Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.1]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:20Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.51]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:21Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj.81]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:23Z [vcp-ControllerServiceChain-bulk7hcchz2w-ServiceChain-n563ldhpontj]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:35:23Z [vcp-ControllerServiceChain-bulk7hcchz2w.ServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:48Z [vcp-ControllerServiceChain-bulk7hcchz2w.DockerConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:49Z [vcp-ControllerServiceChain-bulk7hcchz2w.DockerConfig]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:49Z [vcp-ControllerServiceChain-bulk7hcchz2w]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:35:50Z [ControllerServiceChain]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:50Z [ControllerServiceChainRoleData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:51Z [ControllerServiceChainRoleData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:51Z [BlockStorage]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:52Z [ControllerServiceConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:52Z [Compute]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:52Z [ObjectStorageServiceConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:52Z [ControllerServiceConfigSettings]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:52Z [CephStorage]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:52Z [ObjectStorageServiceConfigSettings]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:52Z [ControllerMergedConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:52Z [ControllerMergedConfigSettings]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:52Z [Controller]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:53Z [ObjectStorageMergedConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:53Z [ObjectStorageMergedConfigSettings]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:53Z [ObjectStorage]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:53Z [vcp-Compute-mfool7nyrtet]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:35:53Z [vcp-Compute-mfool7nyrtet.1]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:35:53Z [BlockStorage]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:54Z [vcp-Controller-2ckm4cs5wbli]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:35:54Z [BlockStorageIpListMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:54Z [vcp-Controller-2ckm4cs5wbli.0]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:54Z [CephStorage]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:54Z [vcp-Compute-mfool7nyrtet.0]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:54Z [vcp-BlockStorageIpListMap-ucfewmhfirdm]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:35:54Z [ObjectStorage]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:55Z [CephStorageIpListMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:55Z [vcp-Controller-2ckm4cs5wbli.2]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:35:55Z [ObjectStorageIpListMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:35:55Z [vcp-CephStorageIpListMap-sjwdnoplstkz]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:35:55Z [vcp-BlockStorageIpListMap-ucfewmhfirdm]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:35:56Z [vcp-ObjectStorageIpListMap-dbz2zfj2cys3]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:35:56Z [vcp-Controller-2ckm4cs5wbli.1]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:35:56Z [BlockStorageIpListMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:56Z [vcp-CephStorageIpListMap-sjwdnoplstkz]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:35:57Z [vcp-ObjectStorageIpListMap-dbz2zfj2cys3]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:35:57Z [CephStorageIpListMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:35:58Z [ObjectStorageIpListMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:01Z [vcp-Controller-2ckm4cs5wbli.2]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-11-20 23:36:01Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:36:01Z [vcp-Compute-mfool7nyrtet.1]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-11-20 23:36:01Z [vcp-Controller-2ckm4cs5wbli.2.DeploymentActions]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:01Z [vcp-Controller-2ckm4cs5wbli.2.DeploymentActions]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:01Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-11-20 23:36:01Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:02Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:02Z [vcp-Compute-mfool7nyrtet.1.DeploymentActions]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:02Z [vcp-Compute-mfool7nyrtet.1.DeploymentActions]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:02Z [vcp-Controller-2ckm4cs5wbli.1]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-11-20 23:36:02Z [vcp-Controller-2ckm4cs5wbli.2.ControllerUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:02Z [vcp-Controller-2ckm4cs5wbli.2.ControllerUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:02Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:03Z [vcp-Controller-2ckm4cs5wbli.1.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:03Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:03Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:03Z [vcp-Controller-2ckm4cs5wbli.2.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:03Z [vcp-Compute-mfool7nyrtet.1.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:03Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.RoleUserData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:04Z [vcp-Controller-2ckm4cs5wbli.1.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:04Z [vcp-Compute-mfool7nyrtet.1.NovaComputeUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:04Z [vcp-Controller-2ckm4cs5wbli.2.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:04Z [vcp-Compute-mfool7nyrtet.1.NovaComputeUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:04Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:05Z [vcp-Controller-2ckm4cs5wbli.1.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:05Z [vcp-Compute-mfool7nyrtet.1.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:05Z [vcp-Controller-2ckm4cs5wbli.1.NodeUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:05Z [vcp-Controller-2ckm4cs5wbli.2.UpdateConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:05Z [vcp-Compute-mfool7nyrtet.1.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:05Z [vcp-Controller-2ckm4cs5wbli.2.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:05Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:06Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeUserData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.1.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.2.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.UpdateConfig]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:06Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.1.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:06Z [vcp-Compute-mfool7nyrtet.1.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.2.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.1.RoleUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.1.UserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:06Z [vcp-Controller-2ckm4cs5wbli.1.UserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:07Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:07Z [vcp-Controller-2ckm4cs5wbli.1.DeploymentActions]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:07Z [vcp-Controller-2ckm4cs5wbli.1.DeploymentActions]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:07Z [vcp-Compute-mfool7nyrtet.1.RoleUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:07Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.RoleUserData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:07Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:07Z [vcp-Controller-2ckm4cs5wbli.1.UpdateConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:07Z [vcp-Compute-mfool7nyrtet.1.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:07Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeUserData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:08Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.UpdateConfig]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:08Z [vcp-Controller-2ckm4cs5wbli.1.ControllerUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:08Z [vcp-Controller-2ckm4cs5wbli.1.ControllerUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:08Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:09Z [vcp-Compute-mfool7nyrtet.1.NodeUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:09Z [vcp-Compute-mfool7nyrtet.1.UpdateConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:09Z [vcp-Controller-2ckm4cs5wbli.2.RoleUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:09Z [vcp-Compute-mfool7nyrtet.1.UserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:09Z [vcp-Compute-mfool7nyrtet.1.UserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:09Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:10Z [vcp-Controller-2ckm4cs5wbli.2.NodeUserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:10Z [vcp-Controller-2ckm4cs5wbli.2.UserData]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:10Z [vcp-Controller-2ckm4cs5wbli.2.UserData]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:10Z [vcp-Controller-2ckm4cs5wbli.2.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:11Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:12Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.TenantPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:12Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.StoragePort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.InternalApiPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.StoragePort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ExternalPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.InternalApiPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.ManagementPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.ExternalPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.TenantPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:13Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ManagementPort]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:14Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:14Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:14Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:14Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:15Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NetworkConfig]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:15Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NetIpMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:15Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NetworkConfig]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:15Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NetIpMap]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:15Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ControllerConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:15Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ControllerConfig]: UPDATE_COMPLETE  The Resource ControllerConfig requires replacement.
+2018-11-20 23:36:16Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeTLSCAData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:16Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ControllerConfig]: CREATE_IN_PROGRESS  state changed
+2018-11-20 23:36:16Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ControllerConfig]: CREATE_COMPLETE  state changed
+2018-11-20 23:36:16Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeTLSCAData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:16Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.ControllerDeployment]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:16Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.ComputeExtraConfigPre]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:16Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.SshHostPubKey]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:17Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.ComputeExtraConfigPre]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:18Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeTLSCAData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:18Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeExtraConfig]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:18Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeTLSCAData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:18Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.SshHostPubKey]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:18Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeTLSData]: UPDATE_IN_PROGRESS  state changed
+2018-11-20 23:36:19Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp.NodeExtraConfig]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:20Z [vcp-Controller-2ckm4cs5wbli-0-gqxv6g4o7cuo.NodeTLSData]: UPDATE_COMPLETE  state changed
+2018-11-20 23:36:20Z [vcp-Compute-mfool7nyrtet-0-4m6ihljkgzpp]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-11-20 23:36:21Z [vcp-Compute-mfool7nyrtet.0]: UPDATE_COMPLETE  state changed
+2018-11-21 00:07:52Z [vcp-Controller-2ckm4cs5wbli.2.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+2018-11-21 00:07:52Z [vcp-Controller-2ckm4cs5wbli.2.Controller]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:07:53Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_FAILED  ResourceInError: resources.NovaCompute: Went to status ERROR due to "Message: Exceeded maximum number of retries. Exhausted all hosts available for retrying build failures for instance 28fc455f-8d94-4fdc-9325-ec681758bee3., Code: 500"
+2018-11-21 00:07:53Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:07:55Z [vcp-Controller-2ckm4cs5wbli.2.Controller]: DELETE_COMPLETE  state changed
+2018-11-21 00:07:55Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_COMPLETE  state changed
+2018-11-21 00:07:58Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:07:59Z [vcp-Controller-2ckm4cs5wbli.2.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:08:01Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_FAILED  ResourceInError: resources.NovaCompute: Went to status ERROR due to "Message: No valid host was found. There are not enough hosts available., Code: 500"
+2018-11-21 00:08:01Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:08:03Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_COMPLETE  state changed
+2018-11-21 00:08:09Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:38:51Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+2018-11-21 00:38:51Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:38:54Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_COMPLETE  state changed
+2018-11-21 00:38:57Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:39:08Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Build of instance 53e291fe-1685-41e4-8ba6-2f4c1f2558dd aborted: Failure prepping block device., Code: 500"
+2018-11-21 00:39:08Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:39:10Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_COMPLETE  state changed
+2018-11-21 00:39:16Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:39:26Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Build of instance a6540e42-a477-43e1-a529-79437740cbbe aborted: Failure prepping block device., Code: 500"
+2018-11-21 00:39:26Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:39:28Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_COMPLETE  state changed
+2018-11-21 00:39:37Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:39:47Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Build of instance 76989671-e4a9-4540-bee7-fba364394eb0 aborted: Failure prepping block device., Code: 500"
+2018-11-21 00:39:47Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:39:49Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_COMPLETE  state changed
+2018-11-21 00:39:52Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_FAILED  ResourceInError: resources.NovaCompute: Went to status ERROR due to "Message: Exceeded maximum number of retries. Exhausted all hosts available for retrying build failures for instance d9dc0ec5-433f-4528-af9b-6c1548ca23bd., Code: 500"
+2018-11-21 00:39:52Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:39:54Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_COMPLETE  state changed
+2018-11-21 00:40:03Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:40:06Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_FAILED  ResourceInError: resources.NovaCompute: Went to status ERROR due to "Message: No valid host was found. There are not enough hosts available., Code: 500"
+2018-11-21 00:40:06Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:40:07Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:40:08Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_COMPLETE  state changed
+2018-11-21 00:40:17Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Build of instance 96c15e98-3157-4b5a-92bb-4a66a0f3a996 aborted: Failure prepping block device., Code: 500"
+2018-11-21 00:40:17Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:40:19Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: DELETE_COMPLETE  state changed
+2018-11-21 00:40:25Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:40:28Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_FAILED  ResourceInError: resources.NovaCompute: Went to status ERROR due to "Message: No valid host was found. There are not enough hosts available., Code: 500"
+2018-11-21 00:40:28Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_IN_PROGRESS  state changed
+2018-11-21 00:40:30Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: DELETE_COMPLETE  state changed
+2018-11-21 00:40:53Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:41:03Z [vcp-Compute-mfool7nyrtet.1.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-11-21 00:41:04Z [vcp-Controller-2ckm4cs5wbli.1.Controller]: CREATE_FAILED  ResourceInError: resources.Controller: Went to status ERROR due to "Message: Build of instance 18f00cbc-7b77-4ece-9589-6fcb8a1dd032 aborted: Failure prepping block device., Code: 500"
+2018-11-21 00:41:04Z [vcp-Controller-2ckm4cs5wbli.1]: CREATE_FAILED  Resource CREATE failed: ResourceInError: resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+2018-11-21 00:41:05Z [vcp-Controller-2ckm4cs5wbli.1]: CREATE_FAILED  ResourceInError: resources[1].resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+2018-11-21 00:41:05Z [vcp-Controller-2ckm4cs5wbli]: UPDATE_FAILED  Resource CREATE failed: ResourceInError: resources[1].resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+2018-11-21 00:41:05Z [Controller]: UPDATE_FAILED  resources.Controller: Resource CREATE failed: ResourceInError: resources[1].resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+2018-11-21 00Heat Stack update failed.
+Heat Stack update failed.
+:41:05Z [vcp]: UPDATE_FAILED  Resource UPDATE failed: resources.Controller: Resource CREATE failed: ResourceInError: resources[1].resources.Controller: Went to status ERROR due to "Message: Unknown, Code: Unknown"
+
+ Stack vcp UPDATE_FAILED 
+
+vcp.Controller.1.Controller:
+  resource_type: OS::TripleO::ControllerServer
+  physical_resource_id: 18f00cbc-7b77-4ece-9589-6fcb8a1dd032
+  status: CREATE_FAILED
+  status_reason: |
+    ResourceInError: resources.Controller: Went to status ERROR due to "Message: Build of instance 18f00cbc-7b77-4ece-9589-6fcb8a1dd032 aborted: Failure prepping block device., Code: 500"

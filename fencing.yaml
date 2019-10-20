@@ -1,0 +1,112 @@
+parameter_defaults:
+  EnableFencing: true
+  FencingConfig:
+    devices:
+    - agent: fence_ipmilan
+      host_mac: 6c:3b:e5:b0:e5:78
+      params:
+        ipaddr: 10.161.11.57
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-ocld-0
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: 6c:3b:e5:b0:c3:00
+      params:
+        ipaddr: 10.161.11.58
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-ocld-1
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: d8:9d:67:6a:f1:f0
+      params:
+        ipaddr: 10.161.11.59
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-ocld-2
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: d8:9d:67:62:37:b0
+      params:
+        ipaddr: 10.161.11.60
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-7
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: 6c:3b:e5:b4:4e:08
+      params:
+        ipaddr: 10.161.11.61
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-4
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: c4:34:6b:b1:75:c0
+      params:
+        ipaddr: 10.161.11.62
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-8
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: d8:9d:67:6b:be:90
+      params:
+        ipaddr: 10.161.11.63
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-6
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: 6c:3b:e5:b0:e6:d0
+      params:
+        ipaddr: 10.161.11.64
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-5
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: 2c:59:e5:3e:d7:30
+      params:
+        ipaddr: 10.161.11.65
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-3
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: 6c:3b:e5:b0:e3:18
+      params:
+        ipaddr: 10.161.11.66
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-2
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: 2c:59:e5:3e:98:70
+      params:
+        ipaddr: 10.161.11.67
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-0
+        privlvl: administrator
+    - agent: fence_ipmilan
+      host_mac: d8:9d:67:6b:a6:08
+      params:
+        ipaddr: 10.161.11.68
+        lanplus: true
+        login: ospctl
+        passwd: SMITH-here
+        pcmk_host_list: saturnosp13-cmp-1
+        privlvl: administrator

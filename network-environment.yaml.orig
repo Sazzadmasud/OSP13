@@ -1,0 +1,230 @@
+resource_registry:
+  OS::TripleO::Network::External: ./openstack-tripleo-heat-templates/network/external_v6.yaml
+#  OS::TripleO::Network::External: ./openstack-tripleo-heat-templates/network/external.yaml
+  OS::TripleO::Network::InternalApi: ./openstack-tripleo-heat-templates/network/internal_api.yaml
+  OS::TripleO::Network::StorageMgmt: ./openstack-tripleo-heat-templates/network/storage_mgmt.yaml
+  OS::TripleO::Network::Storage: ./openstack-tripleo-heat-templates/network/storage.yaml
+  OS::TripleO::Network::Tenant: ./openstack-tripleo-heat-templates/network/tenant.yaml
+#  OS::TripleO::Network::Management: ./openstack-tripleo-heat-templates/network/management.yaml
+
+  # Port assignments for the VIPs
+  #OS::TripleO::Network::Ports::NetVipMap: ./net_vip_map_external_v6.yaml
+  OS::TripleO::Network::Ports::ExternalVipPort: ./openstack-tripleo-heat-templates/network/ports/external_v6.yaml
+#  OS::TripleO::Network::Ports::ExternalVipPort: ./openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Network::Ports::InternalApiVipPort: ./openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Network::Ports::StorageVipPort: ./openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::Network::Ports::StorageMgmtVipPort: ./openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml 
+  OS::TripleO::Network::Ports::TenantVipPort: ./openstack-tripleo-heat-templates/network/ports/tenant.yaml
+#  OS::TripleO::Network::Ports::ManagementVipPort: ./openstack-tripleo-heat-templates/network/ports/management.yaml
+#  OS::TripleO::Network::Ports::RedisVipPort: ./openstack-tripleo-heat-templates/network/ports/vip_v6.yaml
+  OS::TripleO::Network::Ports::RedisVipPort: ./openstack-tripleo-heat-templates/network/ports/vip.yaml
+
+  # Port assignments for the controller role
+  OS::TripleO::Controller::Ports::ExternalPort: ./openstack-tripleo-heat-templates/network/ports/external_from_pool_v6.yaml
+ # OS::TripleO::Controller::Ports::ExternalPort: ./openstack-tripleo-heat-templates/network/ports/external_from_pool.yaml
+  OS::TripleO::Controller::Ports::InternalApiPort: ./openstack-tripleo-heat-templates/network/ports/internal_api_from_pool.yaml
+  OS::TripleO::Controller::Ports::StoragePort: ./openstack-tripleo-heat-templates/network/ports/storage_from_pool.yaml
+  OS::TripleO::Controller::Ports::TenantPort: ./openstack-tripleo-heat-templates/network/ports/tenant_from_pool.yaml
+  OS::TripleO::Controller::Ports::StorageMgmtPort: ./openstack-tripleo-heat-templates/network/ports/storage_mgmt_from_pool.yaml
+#  OS::TripleO::Controller::Ports::ManagementPort: ./openstack-tripleo-heat-templates/network/ports/management_from_pool.yaml
+
+  # Port assignments for the compute role
+  OS::TripleO::Compute::Ports::InternalApiPort: ./openstack-tripleo-heat-templates/network/ports/internal_api_from_pool.yaml
+  OS::TripleO::Compute::Ports::StoragePort: ./openstack-tripleo-heat-templates/network/ports/storage_from_pool.yaml
+  OS::TripleO::Compute::Ports::TenantPort: ./openstack-tripleo-heat-templates/network/ports/tenant_from_pool.yaml
+  OS::TripleO::Compute::Ports::StorageMgmtPort: ./openstack-tripleo-heat-templates/network/ports/storage_mgmt_from_pool.yaml
+#  OS::TripleO::Compute::Ports::ManagementPort: ./openstack-tripleo-heat-templates/network/ports/management_from_pool.yaml
+
+  # Port assignments for the ceph storage role
+  OS::TripleO::CephStorage::Ports::StoragePort: ./openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::CephStorage::Ports::StorageMgmtPort: ./openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+
+  # Port assignments for the swift storage role
+  OS::TripleO::SwiftStorage::Ports::InternalApiPort: ./openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::SwiftStorage::Ports::StoragePort: ./openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::SwiftStorage::Ports::StorageMgmtPort: ./openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+
+  # Port assignments for the block storage role
+  OS::TripleO::BlockStorage::Ports::InternalApiPort: ./openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::BlockStorage::Ports::StoragePort: ./openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::BlockStorage::Ports::StorageMgmtPort: ./openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+
+  # Node Net configuration
+  OS::TripleO::BlockStorage::Net::SoftwareConfig: ./nic-configs/cinder-storage.yaml
+  OS::TripleO::Compute::Net::SoftwareConfig: ./nic-configs/compute.yaml
+#  OS::TripleO::Controller::Net::SoftwareConfig: ./nic-configs/controller-v6.yaml
+  OS::TripleO::Controller::Net::SoftwareConfig: ./nic-configs/controller.yaml
+  OS::TripleO::ObjectStorage::Net::SoftwareConfig: ./nic-configs/swift-storage.yaml
+  OS::TripleO::CephStorage::Net::SoftwareConfig: ./nic-configs/ceph-storage.yaml
+
+  # First boot and Kernel Args
+#  OS::TripleO::NodeUserData: first-boot.yaml
+
+  OS::TripleO::Services::NeutronSriovAgent: openstack-tripleo-heat-templates/puppet/services/neutron-sriov-agent.yaml
+
+parameter_defaults:
+  InternalApiNetCidr: 172.16.2.0/24
+  TenantNetCidr: 172.16.4.0/24
+  StorageNetCidr: 172.16.3.0/24
+  StorageMgmtNetCidr: 172.16.5.0/24
+#  ManagementNetCidr: 172.16.6.0/23
+#  ExternalNetCidr: '2600:5001:2830:30::/64'
+  ExternalNetCidr: '10.30.2.0/23'
+
+  ExternalNetworkVlanID: 30
+  InternalApiNetworkVlanID: 402
+  StorageNetworkVlanID: 403
+  TenantNetworkVlanID: 404
+  StorageMgmtNetworkVlanID: 405
+#  ManagementNetworkVlanID: 406
+
+#  ExternalAllocationPools: [{'start': '2600:5001:2830:30:0:0:13:20', 'end': '2600:5001:2830:30:0:0:13:40'}]
+  ExternalAllocationPools: [{'start': '10.30.3.210', 'end': '10.30.3.220'}]
+  InternalApiAllocationPools: [{'start': '172.16.2.200', 'end': '172.16.2.240'}]
+  StorageAllocationPools: [{'start': '172.16.3.200', 'end': '172.16.3.240'}]
+  TenantAllocationPools: [{'start': '172.16.4.200', 'end': '172.16.4.240'}]
+  StorageMgmtAllocationPools: [{'start': '172.16.5.200', 'end': '172.16.5.240'}]
+#  ManagementAllocationPools: [{'start': '172.16.6.111', 'end': '172.16.6.165'}]
+
+  # Set to the router gateway on the external network
+#  ExternalInterfaceDefaultRoute: '2600:5001:2830:30::1'
+  ExternalInterfaceDefaultRoute: '10.30.2.1'
+  # Gateway router for the provisioning network (or Undercloud IP)
+#  InternalApiDefaultRoute: 172.16.2.17
+  ControlPlaneDefaultRoute: 172.16.1.4
+  ControlPlaneSubnetCidr: '24'
+  # The IP address of the EC2 metadata server. Generally the IP of the Undercloud
+  EC2MetadataIp: 172.16.1.4
+
+  # Define the DNS servers (maximum 2) for the overcloud nodes
+  # DnsServers: [","]
+  DnsServers: ['8.8.8.8','8.8.4.4']
+
+  # Set to "br-ex" if using floating IPs on native VLAN on bridge br-ex
+  NeutronExternalNetworkBridge: "''"
+  #NeutronNetworkType: vxlan
+  NeutronNetworkType: 'vxlan,flat,vlan'
+  NeutronTunnelTypes: vxlan
+  NeutronGlobalPhysnetMtu: 1500
+  NeutronFlatNetworks: ['datacentre','sriov_a','sriov_b']
+  NeutronNetworkVLANRanges: ['datacentre','sriov_a','sriov_b']
+  NeutronMechanismDrivers: ['openvswitch','sriovnicswitch']
+  NeutronBridgeMappings: 'datacentre:br-ex'
+  NeutronEnableIsolatedMetadata: 'True'
+
+  # SRIO-V configuration
+  NeutronSupportedPCIVendorDevs: ['19a2:0710'] #['8086:158b'] #8086:10ed']
+  NeutronPhysicalDevMappings: ['sriov_b:eno7','sriov_b:eno8']
+  NeutronSriovNumVFs: ['eno7:5','eno8:5']
+
+  # Customize bonding options if required
+  #BondInterfaceOvsOptions: "mode=1 miimon=100"
+  BondInterfaceOvsOptions: "bond_mode=active-backup other_config:bond-detect-mode=miimon other_config:bond-miimon-interval=100"
+  # BondInterfaceOvsOptions: "bond_mode=balance-slb lacp=off"
+  # BondInterfaceOvsOptions: "bond_mode=balance-tcp lacp=active other-config:lacp-time=fast other-config:lacp-fallback-ab=true"
+  # BondInterfaceOvsOptions: "bond_mode=balance-slb lacp=active other-config:lacp-time=fast other-config:lacp-fallback-ab=true"
+
+  #  Old Settings
+  ControlFixedIPs: [{'ip_address': '172.16.1.10'}]
+#  PublicVirtualFixedIPs: [{'ip_address': '2600:5001:2830:30:0:0:13:11'}]
+  PublicVirtualFixedIPs: [{'ip_address': '10.30.3.201'}]
+
+  NovaComputeIPs:
+    internal_api:
+    - 172.16.2.175
+    - 172.16.2.176
+    - 172.16.2.177
+    - 172.16.2.178
+    - 172.16.2.179
+    - 172.16.2.180
+    - 172.16.2.181
+    - 172.16.2.182
+    - 172.16.2.183
+    - 172.16.2.184
+    - 172.16.2.185
+    - 172.16.2.186
+    storage:
+    - 172.16.3.175
+    - 172.16.3.176
+    - 172.16.3.177
+    - 172.16.3.178
+    - 172.16.3.179
+    - 172.16.3.180
+    - 172.16.3.181
+    - 172.16.3.182
+    - 172.16.3.183
+    - 172.16.3.184
+    - 172.16.3.185
+    - 172.16.3.186
+    tenant:
+    - 172.16.4.175
+    - 172.16.4.176
+    - 172.16.4.177
+    - 172.16.4.178
+    - 172.16.4.179
+    - 172.16.4.180
+    - 172.16.4.181
+    - 172.16.4.182
+    - 172.16.4.183
+    - 172.16.4.184
+    - 172.16.4.185
+    - 172.16.4.186
+    storage_mgmt:
+    - 172.16.5.175
+    - 172.16.5.176
+    - 172.16.5.177
+    - 172.16.5.178
+    - 172.16.5.179
+    - 172.16.5.180
+    - 172.16.5.181
+    - 172.16.5.182
+    - 172.16.5.183
+    - 172.16.5.184
+    - 172.16.5.185
+    - 172.16.5.186
+#    management:
+#    - 172.16.6.15
+#    - 172.16.6.16
+    internal_api_cidr: '24'
+    storage_cidr: '24'
+    tenant_cidr: '24'
+    storage_mgmt_cidr: '24'
+#    management_cidr: '24'
+  ControllerIPs:
+    external:
+#    - 2600:5001:2830:30:0:0:13:12
+#    - 2600:5001:2830:30:0:0:13:13
+#    - 2600:5001:2830:30:0:0:13:14
+    - 10.30.3.202
+    - 10.30.3.203
+    - 10.30.3.204
+    internal_api:
+    - 172.16.2.172
+    - 172.16.2.173
+    - 172.16.2.174
+    storage:
+    - 172.16.3.172
+    - 172.16.3.173
+    - 172.16.3.174
+    tenant:
+    - 172.16.4.172
+    - 172.16.4.173
+    - 172.16.4.174
+    storage_mgmt:
+    - 172.16.5.172
+    - 172.16.5.173
+    - 172.16.5.174
+#    management:
+#    - 172.16.6.12
+#    - 172.16.6.13
+#    - 172.16.6.14
+    # CIDRs
+#    external_cidr: '64'
+    external_cidr: '23'
+    internal_api_cidr: '24'
+    storage_cidr: '24'
+    tenant_cidr: '24'
+    storage_mgmt_cidr: '24'
+#    management_cidr: '24'
+
+  NetworkDeploymentActions: ['CREATE','UPDATE']

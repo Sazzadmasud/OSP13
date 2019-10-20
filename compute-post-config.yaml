@@ -1,0 +1,57 @@
+heat_template_version: 2014-10-16
+
+description: >
+  Example extra config for post-deployment, this re-runs every update
+
+parameters:
+  servers:
+    type: json
+  # This is provided via parameter_defaults from tripleoclient
+  # it changes to a new timestamp every update, so we can use it to
+  # trigger the deployment to run even though it and the config are
+  # otherwise unchanged
+  ControlPlaneDefaultRoute:
+    type: string
+  DeployIdentifier:
+    type: string
+  input_values:
+    type: json
+    description: input values for the software deployments
+  ComputeKernelArgs:
+    description: >
+      Space seprated list of Kernel args to be update to grub.
+      The given args will be appended to existing args of GRUB_CMDLINE_LINUX in file /etc/default/grub
+      Example: "intel_iommu=on default_hugepagesz=1GB hugepagesz=1G hugepages=1"
+    type: string
+    default: ""
+
+resources:
+
+# Fix Kernel configuration if overcloud is already deployed
+  ExtraConfigGrubBootLine:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      group: script
+      inputs:
+        - name: ComputeKernelArgs
+      config: |
+        #!/bin/sh
+        if ! { grep "$ComputeKernelArgs" /etc/default/grub; } >/dev/null
+        then
+          sed 's/'"$(echo "$ComputeKernelArgs" | awk 'NR<2' RS=' ')"'.*/'"$ComputeKernelArgs"'"/' -i /etc/default/grub
+          grub2-mkconfig -o /etc/grub2.cfg
+          echo $(cat /etc/default/grub | grep GRUB_CMDLINE_LINUX | awk 'NR>1' RS=' ' | grep hugepages= | cut -d'=' -f2 | sed 's/[^0-9]*//g') > /proc/sys/vm/nr_hugepages
+        else
+          echo "NO changes needed on GRUB_CMDLINE_LINUX"
+        fi
+
+  ExtraDeploymentsGrubBootLine:
+    type: OS::Heat::SoftwareDeployments
+    properties:
+      servers:  {get_param: [servers, Compute]}
+      config: {get_resource: ExtraConfigGrubBootLine}
+      actions: ['CREATE', 'UPDATE']
+      input_values:
+        ComputeKernelArgs: {get_param: ComputeKernelArgs}
+        update_identifier: {get_param: DeployIdentifier}
+

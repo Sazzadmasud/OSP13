@@ -1,0 +1,2 @@
+resource_registry:
+  OS::TripleO::Tasks::ComputePostConfig: ./compute-post-config.yaml

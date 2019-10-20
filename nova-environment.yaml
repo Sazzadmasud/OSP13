@@ -1,0 +1,24 @@
+#resource_registry:
+
+parameter_defaults:
+
+
+  #NovaSchedulerDefaultFilters: ['RetryFilter','AvailabilityZoneFilter','NUMATopologyFilter','RamFilter','ComputeFilter','ComputeCapabilitiesFilter','ImagePropertiesFilter','AggregateInstanceExtraSpecsFilter','AggregateCoreFilter','ServerGroupAntiAffinityFilter','ServerGroupAffinityFilter','PciPassthroughFilter','SameHostFilter','DifferentHostFilter']
+  NovaSchedulerDefaultFilters: ['AggregateInstanceExtraSpecsFilter','NUMATopologyFilter','AvailabilityZoneFilter','RamFilter','ComputeFilter','ComputeCapabilitiesFilter','ImagePropertiesFilter','ServerGroupAntiAffinityFilter','ServerGroupAffinityFilter','PciPassthroughFilter']
+  NovaSchedulerAvailableFilters: ["nova.scheduler.filters.all_filters","nova.scheduler.filters.pci_passthrough_filter.PciPassthroughFilter"]
+  RamWeightMultiplier: '-2.0'
+  DiskWeightMultiplier: '-2.0'
+  IOOpsWeightMultiplier: '-0.1'
+  NovaVcpuPinSet: ['2-11','14-23','26-35','38-47']
+  HostCpusList: '2-11,14-23,26-35,38-47'
+  #ComputeKernelArgs: "intel_iommu=on default_hugepagesz=1G hugepagesz=1G hugepages=256"
+  ComputeKernelArgs: "default_hugepagesz=1GB hugepagesz=1G hugepages=256 intel_iommu=on iommu=pt"
+  NovaPCIPassthrough:
+    - devname: "ens1f0"
+      physical_network: "sriov_a"
+    - devname: "ens1f1"
+      physical_network: "sriov_b"
+    - devname: "ens2f0"
+      physical_network: "sriov_a"
+    - devname: "ens2f1"
+      physical_network: "sriov_b"

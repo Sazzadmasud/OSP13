@@ -1,0 +1,11 @@
+parameter_defaults:
+  CloudName: '%stackname%'
+  #CloudDomain: 'ntvs.wllab.vzw'
+
+  ControllerHostnameFormat: '%stackname%-ocld-%index%'
+  ComputeHostnameFormat: '%stackname%-cmp-%index%'
+
+  # NovaImage: 'compute'
+  # controllerImage: 'control'
+
+  NovaComputeLibvirtType: 'kvm'

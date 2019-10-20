@@ -1,0 +1,1445 @@
+Waiting for messages on queue 'tripleo' with no timeout.
+Started Mistral Workflow tripleo.validations.v1.check_pre_deployment_validations. Execution ID: 6d2d8dae-b1d5-4270-bd6b-60f8837cf228
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: 03f41085-70ea-4bea-b41f-8b592f5c4710
+Plan updated.
+Processing templates in the directory /tmp/tripleoclient-0cCVUg/tripleo-heat-templates
+Started Mistral Workflow tripleo.plan_management.v1.get_deprecated_parameters. Execution ID: 1b3a27e9-ca49-4529-809c-3150832e180b
+WARNING: Following parameters are deprecated and still defined. Deprecated parameters will be removed soon!
+  HostCpusList
+  NovaComputeIPs
+WARNING: Following parameters are defined but not used in plan. Could be possible that parameter is valid but currently not used.
+  GlanceIPv6
+  RamWeightMultiplier
+  DiskWeightMultiplier
+  DockerMysqlClientConfigImage
+  CephIPv6
+  MongoDbIPv6
+  NeutronSriovNumVFs
+  NeutronSupportedPCIVendorDevs
+  NeutronPhysicalDevMappings
+  CinderBackupBackend
+  IOOpsWeightMultiplier
+Deploying templates in the directory /tmp/tripleoclient-0cCVUg/tripleo-heat-templates
+Started Mistral Workflow tripleo.deployment.v1.deploy_plan. Execution ID: b8ecf86b-0e11-4fac-996a-c3b1b8c98753
+2018-12-11 20:52:23Z [vcp]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:25Z [vcp.Networks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:25Z [vcp.Networks]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:26Z [vcp.Networks.ManagementNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:26Z [vcp.Networks.ManagementNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:26Z [vcp.PcsdPassword]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:26Z [vcp.PcsdPassword]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:27Z [vcp.Networks.ExternalNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:27Z [vcp.RabbitCookie]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:27Z [vcp.RabbitCookie]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:28Z [vcp.Networks.ExternalNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:28Z [vcp.Networks.StorageNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:28Z [vcp.Networks.ExternalNetwork.ExternalNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:28Z [vcp.HorizonSecret]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:28Z [vcp.HorizonSecret]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:29Z [vcp.Networks.ExternalNetwork.ExternalNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:29Z [vcp.Networks.TenantNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:29Z [vcp.Networks.StorageNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:29Z [vcp.Networks.ExternalNetwork.ExternalSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:29Z [vcp.Networks.StorageNetwork.StorageNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:29Z [vcp.HeatAuthEncryptionKey]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:29Z [vcp.HeatAuthEncryptionKey]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:30Z [vcp.Networks.InternalApiNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:30Z [vcp.Networks.TenantNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:30Z [vcp.Networks.TenantNetwork.TenantNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:30Z [vcp.Networks.ExternalNetwork.ExternalSubnet]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:30Z [vcp.DeploymentServerBlacklistDict]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:30Z [vcp.DeploymentServerBlacklistDict]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:30Z [vcp.Networks.ExternalNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:30Z [vcp.Networks.StorageNetwork.StorageNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:30Z [vcp.Networks.StorageNetwork.StorageSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:31Z [vcp.Networks.ExternalNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:31Z [vcp.Networks.StorageMgmtNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:31Z [vcp.MysqlRootPassword]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:31Z [vcp.MysqlRootPassword]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:31Z [vcp.Networks.InternalApiNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:31Z [vcp.Networks.InternalApiNetwork.InternalApiNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:31Z [vcp.DefaultPasswords]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:32Z [vcp.Networks.TenantNetwork.TenantNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:32Z [vcp.Networks.NetworkExtraConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:32Z [vcp.Networks.NetworkExtraConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:32Z [vcp.Networks.TenantNetwork.TenantSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:32Z [vcp.Networks.StorageMgmtNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:32Z [vcp.ServiceNetMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:32Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:32Z [vcp.Networks.StorageNetwork.StorageSubnet]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:32Z [vcp.Networks.StorageNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:32Z [vcp.Networks.InternalApiNetwork.InternalApiNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:32Z [vcp.ServiceNetMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:32Z [vcp.Networks.InternalApiNetwork.InternalApiSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:33Z [vcp.ServiceNetMap.ServiceNetMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:33Z [vcp.DefaultPasswords]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:33Z [vcp.ServiceNetMap.ServiceNetMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:33Z [vcp.ServiceNetMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:33Z [vcp.Networks.StorageNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:33Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:33Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:33Z [vcp.Networks.TenantNetwork.TenantSubnet]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:33Z [vcp.Networks.TenantNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:33Z [vcp.ServiceNetMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:34Z [vcp.Networks.TenantNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:34Z [vcp.Networks.InternalApiNetwork.InternalApiSubnet]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:34Z [vcp.Networks.InternalApiNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:34Z [vcp.Networks.InternalApiNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:34Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtSubnet]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:34Z [vcp.Networks.StorageMgmtNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:35Z [vcp.Networks.StorageMgmtNetwork]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:35Z [vcp.Networks]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:35Z [vcp.Networks]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:37Z [vcp.ControlVirtualIP]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:38Z [vcp.ControlVirtualIP]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:39Z [vcp.StorageMgmtVirtualIP]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:39Z [vcp.NetCidrMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:39Z [vcp.PublicVirtualIP]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:39Z [vcp.NetCidrMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:39Z [vcp.InternalApiVirtualIP]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:39Z [vcp.RedisVirtualIP]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:39Z [vcp.StorageVirtualIP]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:40Z [vcp.PublicVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:40Z [vcp.InternalApiVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:40Z [vcp.PublicVirtualIP.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:40Z [vcp.StorageMgmtVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:40Z [vcp.InternalApiVirtualIP.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:40Z [vcp.StorageMgmtVirtualIP.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:40Z [vcp.RedisVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:40Z [vcp.RedisVirtualIP.VipPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:40Z [vcp.StorageVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:40Z [vcp.StorageVirtualIP.StoragePort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:42Z [vcp.PublicVirtualIP.ExternalPort]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.PublicVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:42Z [vcp.InternalApiVirtualIP.InternalApiPort]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.InternalApiVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:42Z [vcp.StorageVirtualIP.StoragePort]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.StorageVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:42Z [vcp.PublicVirtualIP]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.InternalApiVirtualIP]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.StorageVirtualIP]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.StorageMgmtVirtualIP.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:42Z [vcp.StorageMgmtVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:43Z [vcp.RedisVirtualIP.VipPort]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:43Z [vcp.RedisVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:43Z [vcp.StorageMgmtVirtualIP]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:43Z [vcp.RedisVirtualIP]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:44Z [vcp.VipMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:45Z [vcp.VipMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:45Z [vcp.VipMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:45Z [vcp.VipMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:45Z [vcp.VipMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:52:46Z [vcp.VipMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:46Z [vcp.VipHosts]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:46Z [vcp.VipHosts]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:46Z [vcp.EndpointMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:48Z [vcp.EndpointMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:48Z [vcp.EndpointMapData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:48Z [vcp.EndpointMapData]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:48Z [vcp.ObjectStorageServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:48Z [vcp.BlockStorageServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:48Z [vcp.ComputeServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:48Z [vcp.ControllerServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:48Z [vcp.CephStorageServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:49Z [vcp.ComputeServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:49Z [vcp.ControllerServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:49Z [vcp.BlockStorageServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:49Z [vcp.CephStorageServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:49Z [vcp.ObjectStorageServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:50Z [vcp.BlockStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:50Z [vcp.ControllerServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:50Z [vcp.CephStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:50Z [vcp.ComputeServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:50Z [vcp.ObjectStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:51Z [vcp.ControllerServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:51Z [vcp.BlockStorageServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:51Z [vcp.CephStorageServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:51Z [vcp.ComputeServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:51Z [vcp.ObjectStorageServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:51Z [vcp.CephStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:51Z [vcp.BlockStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:51Z [vcp.ObjectStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:52:52Z [vcp.BlockStorageServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:52Z [vcp.CephStorageServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:52Z [vcp.ControllerServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:52Z [vcp.ObjectStorageServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:52Z [vcp.ComputeServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:52Z [vcp.ObjectStorageServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:53Z [vcp.ObjectStorageServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:53Z [vcp.BlockStorageServiceChain.ServiceChain.24]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:53Z [vcp.CephStorageServiceChain.ServiceChain.21]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:53Z [vcp.BlockStorageServiceChain.ServiceChain.17]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:53Z [vcp.ObjectStorageServiceChain.ServiceChain.25]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:53Z [vcp.BlockStorageServiceChain.ServiceChain.17]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:53Z [vcp.ObjectStorageServiceChain.ServiceChain.25]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:54Z [31]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:54Z [31]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:54Z [vcp.CephStorageServiceChain.ServiceChain.14]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:54Z [vcp.CephStorageServiceChain.ServiceChain.14]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:54Z [vcp.BlockStorageServiceChain.ServiceChain.24]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:54Z [vcp.BlockStorageServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:54Z [vcp.ObjectStorageServiceChain.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:54Z [vcp.ObjectStorageServiceChain.ServiceChain.13]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:55Z [vcp.CephStorageServiceChain.ServiceChain.21]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:55Z [26]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:55Z [vcp.CephStorageServiceChain.ServiceChain.23]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:55Z [vcp.BlockStorageServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:55Z [vcp.ObjectStorageServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:56Z [0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:56Z [0]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:56Z [vcp.BlockStorageServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:56Z [vcp.BlockStorageServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:56Z [vcp.BlockStorageServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:56Z [vcp.ObjectStorageServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:57Z [vcp.CephStorageServiceChain.ServiceChain.20]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:57Z [vcp.CephStorageServiceChain.ServiceChain.23]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:57Z [18]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:57Z [vcp.BlockStorageServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:57Z [26]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:57Z [vcp.ObjectStorageServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:57Z [vcp.BlockStorageServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:57Z [vcp.ObjectStorageServiceChain.ServiceChain.16]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:57Z [vcp.BlockStorageServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:57Z [vcp.ObjectStorageServiceChain.ServiceChain.16]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:58Z [vcp.CephStorageServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:58Z [vcp.ObjectStorageServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:58Z [vcp.CephStorageServiceChain.ServiceChain.20]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:58Z [18]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:58Z [vcp.ObjectStorageServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:58Z [vcp.BlockStorageServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:59Z [vcp.CephStorageServiceChain.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:59Z [40]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:59Z [40]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:59Z [vcp.CephStorageServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:59Z [vcp.ObjectStorageServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:52:59Z [vcp.ObjectStorageServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2018-12-11 20:52:59Z [vcp.BlockStorageServiceChain.ServiceChain.15]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:00Z [vcp.CephStorageServiceChain.ServiceChain.19]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:00Z [32]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:00Z [vcp.CephStorageServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:00Z [4]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:00Z [4]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:00Z [vcp.ObjectStorageServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:00Z [32]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:00Z [vcp.CephStorageServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:00Z [vcp.BlockStorageServiceChain.ServiceChain.25]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:00Z [vcp.ObjectStorageServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:01Z [vcp.CephStorageServiceChain.ServiceChain.18]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:01Z [42]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:01Z [42]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:01Z [vcp.CephStorageServiceChain.ServiceChain.13]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:01Z [vcp.BlockStorageServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:01Z [vcp.BlockStorageServiceChain.ServiceChain.20]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:02Z [vcp.CephStorageServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:02Z [vcp.ObjectStorageServiceChain.ServiceChain.20]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:02Z [16]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:02Z [vcp.BlockStorageServiceChain.ServiceChain.25]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:02Z [vcp.BlockStorageServiceChain.ServiceChain.15]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:02Z [vcp.CephStorageServiceChain.ServiceChain.18]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:02Z [vcp.CephStorageServiceChain.ServiceChain.19]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:02Z [vcp.BlockStorageServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:02Z [vcp.BlockStorageServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [vcp.ObjectStorageServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:03Z [vcp.ObjectStorageServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [vcp.CephStorageServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:03Z [vcp.CephStorageServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:03Z [1]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [vcp.BlockStorageServiceChain.ServiceChain.20]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [vcp.ObjectStorageServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [vcp.CephStorageServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:03Z [16]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:04Z [vcp.BlockStorageServiceChain.ServiceChain.19]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:04Z [vcp.ObjectStorageServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:04Z [vcp.BlockStorageServiceChain.ServiceChain.19]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:04Z [vcp.CephStorageServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:04Z [vcp.ObjectStorageServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:04Z [vcp.CephStorageServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:04Z [20]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:04Z [20]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:04Z [vcp.BlockStorageServiceChain.ServiceChain.23]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:04Z [vcp.ObjectStorageServiceChain.ServiceChain.15]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:05Z [vcp.CephStorageServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:05Z [vcp.CephStorageServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:05Z [21]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:05Z [21]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:05Z [vcp.ObjectStorageServiceChain.ServiceChain.15]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:05Z [vcp.BlockStorageServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:05Z [vcp.BlockStorageServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:05Z [vcp.ObjectStorageServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:06Z [vcp.CephStorageServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:06Z [vcp.CephStorageServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:06Z [39]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:06Z [39]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:06Z [vcp.BlockStorageServiceChain.ServiceChain.23]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:06Z [vcp.BlockStorageServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:06Z [vcp.ObjectStorageServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:06Z [vcp.BlockStorageServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:07Z [vcp.CephStorageServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:07Z [vcp.CephStorageServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:07Z [32]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:07Z [8]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:07Z [vcp.ObjectStorageServiceChain.ServiceChain.20]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:07Z [32]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:07Z [vcp.ObjectStorageServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:07Z [vcp.BlockStorageServiceChain.ServiceChain.18]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:07Z [vcp.BlockStorageServiceChain.ServiceChain.18]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:07Z [vcp.ObjectStorageServiceChain.ServiceChain.19]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:08Z [vcp.CephStorageServiceChain.ServiceChain.16]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:08Z [vcp.CephStorageServiceChain.ServiceChain.16]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:08Z [118]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:08Z [35]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:08Z [vcp.ObjectStorageServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:08Z [vcp.BlockStorageServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:08Z [vcp.ObjectStorageServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:08Z [vcp.BlockStorageServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:09Z [vcp.ObjectStorageServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:09Z [vcp.CephStorageServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:09Z [vcp.CephStorageServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:09Z [33]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:09Z [23]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:09Z [33]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:09Z [118]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:09Z [35]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:09Z [vcp.BlockStorageServiceChain.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:09Z [vcp.ObjectStorageServiceChain.ServiceChain.22]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:10Z [vcp.CephStorageServiceChain.ServiceChain.22]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:10Z [22]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:10Z [58]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:10Z [58]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:10Z [vcp.ObjectStorageServiceChain.ServiceChain.19]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:10Z [vcp.BlockStorageServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:10Z [vcp.ObjectStorageServiceChain.ServiceChain.23]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:11Z [8]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [vcp.BlockStorageServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [vcp.CephStorageServiceChain.ServiceChain.24]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:11Z [123]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:11Z [123]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [vcp.CephStorageServiceChain.ServiceChain.24]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [24]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:11Z [vcp.BlockStorageServiceChain.ServiceChain.13]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [vcp.ObjectStorageServiceChain.ServiceChain.22]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [vcp.CephStorageServiceChain.ServiceChain.22]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:11Z [vcp.BlockStorageServiceChain.ServiceChain.26]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:11Z [vcp.BlockStorageServiceChain.ServiceChain.26]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:12Z [vcp.ObjectStorageServiceChain.ServiceChain.24]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:12Z [vcp.CephStorageServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:12Z [vcp.CephStorageServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:12Z [27]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:12Z [27]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:12Z [75]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:12Z [vcp.ObjectStorageServiceChain.ServiceChain.23]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:12Z [vcp.BlockStorageServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:13Z [vcp.ObjectStorageServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:13Z [vcp.ObjectStorageServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:13Z [vcp.CephStorageServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:13Z [20]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:13Z [10]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:13Z [10]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:13Z [20]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:14Z [vcp.ObjectStorageServiceChain.ServiceChain.24]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:14Z [vcp.BlockStorageServiceChain.ServiceChain.14]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:14Z [vcp.CephStorageServiceChain.ServiceChain.15]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:14Z [vcp.CephStorageServiceChain.ServiceChain.15]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:14Z [vcp.ObjectStorageServiceChain.ServiceChain.18]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:14Z [6]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:14Z [6]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:14Z [112]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:14Z [112]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:14Z [vcp.CephStorageServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:15Z [vcp.BlockStorageServiceChain.ServiceChain.21]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:15Z [vcp.ObjectStorageServiceChain.ServiceChain.14]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:15Z [vcp.BlockStorageServiceChain.ServiceChain.14]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:15Z [vcp.ObjectStorageServiceChain.ServiceChain.14]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:15Z [vcp.CephStorageServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:15Z [23]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:15Z [29]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:15Z [29]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:15Z [81]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:15Z [vcp.BlockStorageServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:15Z [24]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:16Z [75]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:16Z [vcp.CephStorageServiceChain.ServiceChain.17]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:16Z [vcp.CephStorageServiceChain.ServiceChain.17]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:16Z [vcp.BlockStorageServiceChain.ServiceChain.22]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:16Z [41]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:16Z [41]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:16Z [85]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:16Z [85]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:16Z [vcp.ObjectStorageServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:16Z [vcp.ObjectStorageServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:16Z [vcp.ObjectStorageServiceChain.ServiceChain.18]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:17Z [vcp.CephStorageServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:17Z [vcp.CephStorageServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:17Z [vcp.CephStorageServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:17Z [vcp.CephStorageServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:17Z [vcp.BlockStorageServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:17Z [vcp.BlockStorageServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:17Z [38]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:17Z [94]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:17Z [vcp.ObjectStorageServiceChain.ServiceChain.17]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:17Z [vcp.BlockStorageServiceChain.ServiceChain.21]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:17Z [vcp.CephStorageServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:18Z [vcp.BlockStorageServiceChain.ServiceChain.22]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:18Z [vcp.BlockStorageServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:18Z [37]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:18Z [vcp.ObjectStorageServiceChain.ServiceChain.21]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:18Z [17]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:18Z [17]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:19Z [38]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:19Z [vcp.ObjectStorageServiceChain.ServiceChain.17]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:19Z [14]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:19Z [14]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:19Z [81]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:19Z [110]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:19Z [110]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:19Z [22]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:20Z [37]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:20Z [vcp.BlockStorageServiceChain.ServiceChain.16]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:20Z [vcp.BlockStorageServiceChain.ServiceChain.16]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:20Z [vcp.ObjectStorageServiceChain.ServiceChain.21]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:20Z [vcp.ObjectStorageServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:20Z [34]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:20Z [43]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:20Z [43]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:20Z [vcp.BlockStorageServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.BlockStorageServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.CellV2Discovery]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ExternalDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.CellV2Discovery]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ExternalDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.UpgradeBatchTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.UpgradeBatchTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DockerPuppetTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PuppetConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.UpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DockerPuppetTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PuppetConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DeployStepsTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.UpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DeployStepsTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PostUpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.ObjectStorageServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PostUpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.UpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.MonitoringSubscriptionsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PreUpgradeRollingTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.LoggingSourcesConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DockerConfigScripts]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.KollaConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.MonitoringSubscriptionsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.UpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PreUpgradeRollingTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DockerConfigScripts]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ExternalPostDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.LoggingSourcesConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.KollaConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.ExternalPostDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.BlockStorageServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.WorkflowTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.HostPrepTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.HostPrepTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.GlobalConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.WorkflowTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PuppetStepConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.GlobalConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.FastForwardPostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DockerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.FastForwardUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.LoggingGroupsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.PuppetStepConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.FastForwardPostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.DockerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.FastForwardUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain.LoggingGroupsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:21Z [vcp.CephStorageServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:21Z [128]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:22Z [94]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:22Z [13]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:22Z [128]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:22Z [13]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:22Z [vcp.CephStorageServiceChainRoleData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:22Z [vcp.CephStorageServiceChainRoleData]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:22Z [vcp.CephStorageServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:22Z [vcp.CephStorageServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:22Z [7]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.UpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.DockerConfigScripts]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.DockerConfigScripts]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.UpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.ServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.DockerPuppetTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.ServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.MonitoringSubscriptionsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [37]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.ExternalDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.DockerPuppetTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PostUpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.ExternalDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.GlobalConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.FastForwardUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.LoggingGroupsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PostUpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.GlobalConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.FastForwardUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.LoggingGroupsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.MonitoringSubscriptionsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.HostPrepTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.UpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PuppetConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DeployStepsTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.HostPrepTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.LoggingGroupsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DeployStepsTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.UpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [34]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ExternalDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PuppetConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.MonitoringSubscriptionsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.LoggingGroupsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PreUpgradeRollingTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PuppetStepConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.GlobalConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ExternalDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.WorkflowTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.MonitoringSubscriptionsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PreUpgradeRollingTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.KollaConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.GlobalConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PuppetStepConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.WorkflowTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.FastForwardUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.KollaConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.UpgradeBatchTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PuppetStepConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.UpgradeBatchTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.UpgradeBatchTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.FastForwardUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.PuppetStepConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.CellV2Discovery]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.CellV2Discovery]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DockerConfigScripts]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.UpgradeBatchTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.WorkflowTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DockerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.ObjectStorageServiceChain.WorkflowTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DockerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DockerConfigScripts]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DockerPuppetTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.LoggingSourcesConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.FastForwardPostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.DockerPuppetTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.LoggingSourcesConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.FastForwardPostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PuppetConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PreUpgradeRollingTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ExternalPostDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PuppetConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.PreUpgradeRollingTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [vcp.BlockStorageServiceChain.ExternalPostDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:23Z [9]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:23Z [9]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [140]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.BlockStorageServiceChain.PostUpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.BlockStorageServiceChain.PostUpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.BlockStorageServiceChain.UpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.FastForwardPostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.BlockStorageServiceChain.UpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.FastForwardPostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.HostPrepTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.BlockStorageServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.PostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.HostPrepTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.PostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.DeployStepsTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.DeployStepsTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.KollaConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.ExternalPostDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.KollaConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.ExternalPostDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.LoggingSourcesConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.CellV2Discovery]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.CellV2Discovery]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.LoggingSourcesConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.ServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.DockerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.UpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.DockerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.UpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain.ServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [28]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:24Z [28]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:24Z [vcp.BlockStorageServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:24Z [vcp.ObjectStorageServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:25Z [104]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:25Z [vcp.BlockStorageServiceChainRoleData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:25Z [vcp.ObjectStorageServiceChainRoleData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:25Z [vcp.ObjectStorageServiceChainRoleData]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:25Z [vcp.ObjectStorageServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:25Z [vcp.ObjectStorageServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:25Z [36]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:25Z [vcp.BlockStorageServiceChainRoleData]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:26Z [140]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:26Z [79]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:26Z [vcp.BlockStorageServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:26Z [79]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:26Z [vcp.BlockStorageServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:26Z [3]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:26Z [3]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:27Z [50]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:27Z [36]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:28Z [61]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:28Z [33]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:28Z [7]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:29Z [125]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:29Z [125]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:29Z [5]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:29Z [5]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:30Z [33]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:30Z [66]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:30Z [66]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:30Z [15]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:31Z [57]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:31Z [57]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:31Z [37]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:31Z [11]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:32Z [61]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:32Z [99]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:32Z [104]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:32Z [19]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:32Z [19]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:32Z [50]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:33Z [24]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:33Z [17]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:33Z [17]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:34Z [15]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:34Z [29]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:34Z [29]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:34Z [2]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:35Z [60]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:35Z [60]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:35Z [25]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:36Z [93]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:36Z [93]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:37Z [10]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:37Z [10]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:37Z [2]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:37Z [30]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:37Z [30]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:37Z [25]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:37Z [99]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:38Z [84]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:38Z [84]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:38Z [12]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:38Z [11]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:39Z [34]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:39Z [34]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:39Z [24]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:39Z [12]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:40Z [vcp.ComputeServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:40Z [92]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:40Z [92]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:40Z [vcp.ComputeServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:41Z [86]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:42Z [102]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:42Z [102]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:43Z [56]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:44Z [83]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:44Z [86]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:45Z [101]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.DeployStepsTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.DeployStepsTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.ExternalDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.ExternalDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.MonitoringSubscriptionsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.LoggingSourcesConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:45Z [vcp.ComputeServiceChain.MonitoringSubscriptionsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.HostPrepTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.LoggingSourcesConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.CellV2Discovery]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.CellV2Discovery]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.HostPrepTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.DockerPuppetTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.WorkflowTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.DockerPuppetTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.FastForwardUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.WorkflowTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.UpgradeBatchTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [121]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.FastForwardUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.UpgradeBatchTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.DockerConfigScripts]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.LoggingGroupsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.DockerConfigScripts]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.GlobalConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.LoggingGroupsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.GlobalConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.KollaConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.DockerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.UpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.DockerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.UpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.UpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.FastForwardPostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PuppetConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.UpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.KollaConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.FastForwardPostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PuppetStepConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ExternalPostDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PuppetStepConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PreUpgradeRollingTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.ExternalPostDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PreUpgradeRollingTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PostUpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:46Z [56]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:46Z [vcp.ComputeServiceChain.PostUpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:47Z [vcp.ComputeServiceChain.PuppetConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:47Z [vcp.ComputeServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:53:47Z [12]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:47Z [vcp.ComputeServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:47Z [vcp.ComputeServiceChainRoleData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:47Z [vcp.ComputeServiceChainRoleData]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:48Z [vcp.ComputeServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:48Z [vcp.ComputeServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:48Z [127]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:48Z [127]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:48Z [12]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:49Z [131]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:50Z [31]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:50Z [31]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:50Z [83]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:51Z [121]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:51Z [72]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:51Z [72]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:51Z [101]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:51Z [131]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:52Z [55]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:53Z [141]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:53Z [141]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:54Z [11]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:55Z [40]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:55Z [40]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:55Z [11]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:56Z [78]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:56Z [78]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:57Z [126]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:57Z [126]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:57Z [55]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:58Z [30]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:58Z [30]: CREATE_COMPLETE  state changed
+2018-12-11 20:53:59Z [65]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:53:59Z [65]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:00Z [52]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:01Z [3]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:02Z [4]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:03Z [2]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:04Z [113]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:04Z [113]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:05Z [82]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:06Z [96]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:06Z [96]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:06Z [4]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:06Z [82]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:07Z [52]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:07Z [98]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:07Z [98]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:07Z [2]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:08Z [14]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:08Z [3]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:09Z [69]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:09Z [69]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:09Z [14]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:10Z [91]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:10Z [91]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:11Z [97]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:12Z [51]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:13Z [105]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:14Z [13]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:15Z [95]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:15Z [95]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:15Z [13]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:16Z [124]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:16Z [124]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:17Z [51]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:17Z [64]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:18Z [47]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:18Z [97]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:18Z [105]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:19Z [25]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:19Z [25]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:20Z [47]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:20Z [122]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:20Z [122]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:21Z [16]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:22Z [46]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:23Z [64]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:23Z [132]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:24Z [68]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:24Z [68]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:25Z [5]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:25Z [5]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:25Z [16]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:26Z [117]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:26Z [117]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:27Z [77]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:27Z [77]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:28Z [46]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:28Z [36]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:29Z [132]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:29Z [136]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:29Z [136]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:30Z [135]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:31Z [115]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:31Z [115]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:32Z [63]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:33Z [36]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:33Z [42]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:33Z [42]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:34Z [63]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:34Z [54]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:35Z [135]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:35Z [74]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:35Z [74]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:36Z [71]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:36Z [71]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:37Z [76]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:37Z [76]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:38Z [108]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:39Z [73]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:39Z [73]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:40Z [35]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:40Z [35]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:41Z [54]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:41Z [108]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:41Z [0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:41Z [0]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:42Z [8]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:42Z [8]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:43Z [67]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:43Z [67]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:44Z [53]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:45Z [100]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:46Z [53]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:46Z [9]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:46Z [9]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:47Z [103]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:48Z [139]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:49Z [130]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:50Z [139]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:50Z [119]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:51Z [130]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:51Z [100]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:51Z [89]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:51Z [89]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:53Z [80]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:53Z [103]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:54Z [41]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:54Z [80]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:55Z [143]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:55Z [143]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:55Z [41]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:56Z [23]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:56Z [23]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:56Z [119]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:57Z [45]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:57Z [45]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:58Z [129]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:54:58Z [129]: CREATE_COMPLETE  state changed
+2018-12-11 20:54:59Z [106]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:00Z [49]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:01Z [44]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:01Z [44]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:02Z [7]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:02Z [7]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:03Z [26]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:03Z [26]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:04Z [1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:05Z [87]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:05Z [49]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:05Z [106]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:06Z [109]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:06Z [109]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:07Z [116]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:07Z [116]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:08Z [137]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:09Z [59]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:09Z [59]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:09Z [137]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:10Z [19]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:10Z [19]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:10Z [1]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:11Z [21]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:11Z [21]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:11Z [87]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:12Z [28]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:12Z [28]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:13Z [133]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:13Z [133]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:14Z [15]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:15Z [27]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:15Z [27]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:16Z [62]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:16Z [62]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:17Z [70]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:17Z [70]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:17Z [15]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:18Z [39]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:18Z [39]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:19Z [134]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:20Z [38]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:21Z [107]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:21Z [134]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:22Z [88]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:22Z [88]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:22Z [107]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:23Z [111]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:23Z [111]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:24Z [120]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:25Z [48]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:25Z [38]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:26Z [142]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:26Z [142]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:27Z [138]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:28Z [120]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:28Z [90]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:29Z [18]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:29Z [18]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:29Z [138]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:30Z [48]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:30Z [22]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:30Z [22]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:31Z [6]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:31Z [6]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:32Z [114]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:32Z [114]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:33Z [90]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:33Z [vcp.ControllerServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:55:33Z [vcp.ControllerServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.ServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.ServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.FastForwardUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.FastForwardUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.CellV2Discovery]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.DockerConfigScripts]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.CellV2Discovery]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.DockerConfigScripts]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.UpgradeBatchTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.UpgradeBatchTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:52Z [vcp.ControllerServiceChain.ServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.FastForwardPostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.ServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.FastForwardPostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.ExternalDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.DockerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.PreUpgradeRollingTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.ExternalDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.ExternalPostDeployTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.PreUpgradeRollingTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.DockerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.ExternalPostDeployTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.UpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.DockerPuppetTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.PostUpgradeTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.DockerPuppetTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.PostUpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.UpgradeTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:53Z [vcp.ControllerServiceChain.KollaConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.LoggingGroupsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.KollaConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.LoggingGroupsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.PuppetConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.GlobalConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.PuppetConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.GlobalConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.UpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.UpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.DeployStepsTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.LoggingSourcesConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.DeployStepsTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.HostPrepTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.LoggingSourcesConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:54Z [vcp.ControllerServiceChain.WorkflowTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.HostPrepTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.PostUpdateTasks]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.WorkflowTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.MonitoringSubscriptionsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.PostUpdateTasks]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.MonitoringSubscriptionsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.PuppetStepConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain.PuppetStepConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:55:55Z [vcp.ControllerServiceChain]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:56Z [vcp.ControllerServiceChainRoleData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:56Z [vcp.ControllerServiceChainRoleData]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:56Z [vcp.ComputeServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.ComputeServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.BlockStorageServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.BlockStorageServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.Compute]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.BlockStorageMergedConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.ComputeMergedConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.BlockStorageMergedConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.ComputeMergedConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.ControllerServiceNames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.ControllerServiceNames]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.BlockStorage]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.CephStorageServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.CephStorageServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.ControllerServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.ObjectStorageServiceConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.ControllerServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.CephStorageMergedConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:57Z [vcp.ObjectStorageServiceConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:57Z [vcp.CephStorageMergedConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:58Z [vcp.ControllerMergedConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:58Z [vcp.ControllerMergedConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:58Z [vcp.ObjectStorage]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:58Z [vcp.ObjectStorageMergedConfigSettings]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:58Z [vcp.ObjectStorageMergedConfigSettings]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:58Z [vcp.CephStorage]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:58Z [vcp.Controller]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:58Z [vcp.Controller]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:55:58Z [vcp.Controller]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:55:59Z [vcp.BlockStorage]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:59Z [vcp.BlockStorageNetworkHostnameMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:59Z [vcp.BlockStorageNetworkHostnameMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:59Z [vcp.BlockStorageServers]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:59Z [vcp.BlockStorageServers]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:59Z [vcp.BlockStorageIpListMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:59Z [vcp.Controller]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-12-11 20:55:59Z [vcp.Compute]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2018-12-11 20:55:59Z [vcp.Controller.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:59Z [vcp.ObjectStorage]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:59Z [vcp.Compute.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:55:59Z [vcp.CephStorage]: CREATE_COMPLETE  state changed
+2018-12-11 20:55:59Z [vcp.ObjectStorageServers]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageServers]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageNetworkHostnameMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageNetworkHostnameMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:00Z [vcp.CephStorageServers]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.CephStorageServers]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageIpListMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.CephStorageNetworkHostnameMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.CephStorageNetworkHostnameMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:00Z [vcp.BlockStorageIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:56:00Z [vcp.CephStorageIpListMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.BlockStorageIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.BlockStorageIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:56:00Z [vcp.Controller.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:00Z [vcp.ObjectStorageIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:00Z [vcp.CephStorageIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:56:01Z [vcp.CephStorageIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:01Z [vcp.CephStorageIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:01Z [vcp.BlockStorageIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:01Z [vcp.BlockStorageIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:01Z [vcp.BlockStorageIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:56:01Z [vcp.BlockStorageIpListMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:01Z [vcp.ObjectStorageIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:01Z [vcp.ObjectStorageIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:01Z [vcp.ObjectStorageIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:56:02Z [vcp.CephStorageIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:02Z [vcp.CephStorageIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:02Z [vcp.CephStorageIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 20:56:02Z [vcp.ObjectStorageIpListMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:02Z [vcp.CephStorageIpListMap]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:04Z [vcp.Compute.0]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:56:04Z [vcp.Controller.1]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:56:05Z [vcp.Compute.0.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:05Z [vcp.Controller.1.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:05Z [vcp.Controller.0]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 20:56:06Z [vcp.Compute.0.NovaComputeUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:06Z [vcp.Compute.0.NovaComputeUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:06Z [vcp.Controller.0.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:06Z [vcp.Controller.1.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:06Z [vcp.Compute.0.UpdateConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:07Z [vcp.Compute.0.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:07Z [vcp.Controller.1.ControllerUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:07Z [vcp.Controller.1.ControllerUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:07Z [vcp.Controller.0.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:08Z [vcp.Controller.1.NodeUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:08Z [vcp.Controller.0.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:08Z [vcp.Controller.1.RoleUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:08Z [vcp.Compute.0.DeploymentActions]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:08Z [vcp.Compute.0.DeploymentActions]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:08Z [vcp.Controller.0.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:08Z [vcp.Controller.1.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:08Z [vcp.Compute.0.RoleUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:09Z [vcp.Controller.0.UpdateConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:09Z [vcp.Compute.0.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:09Z [vcp.Controller.0.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:09Z [vcp.Controller.1.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:10Z [vcp.Controller.0.RoleUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:10Z [vcp.Controller.1.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:10Z [vcp.Controller.1.UserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:10Z [vcp.Compute.0.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:10Z [vcp.Controller.1.UserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:10Z [vcp.Controller.0.ControllerUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:10Z [vcp.Controller.1.Controller]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:10Z [vcp.Controller.1.DeploymentActions]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:10Z [vcp.Controller.1.DeploymentActions]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:10Z [vcp.Controller.0.ControllerUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:11Z [vcp.Controller.1.UpdateConfig]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:11Z [vcp.Controller.0.DeploymentActions]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:11Z [vcp.Controller.0.DeploymentActions]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:11Z [vcp.Compute.0.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:12Z [vcp.Compute.0.NodeUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:12Z [vcp.Controller.0.NodeUserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:12Z [vcp.Compute.0.UserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:12Z [vcp.Compute.0.UserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:12Z [vcp.Controller.0.UserData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:12Z [vcp.Compute.0.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2018-12-11 20:56:12Z [vcp.Controller.0.UserData]: CREATE_COMPLETE  state changed
+2018-12-11 20:56:12Z [vcp.Controller.0.Controller]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:44Z [vcp.Controller.0.Controller]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.PreNetworkConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.PreNetworkConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.TenantPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.NetHostMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.ManagementPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.NetHostMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:45Z [vcp.Controller.0.StoragePort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.Controller]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.PreNetworkConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.PreNetworkConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.StoragePort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.NetHostMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.NetHostMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.TenantPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.0.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.1.ManagementPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:46Z [vcp.Controller.0.TenantPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.0.ManagementPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.0.InternalApiPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.0.ExternalPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:46Z [vcp.Controller.0.StoragePort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:47Z [vcp.Controller.1.ExternalPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:47Z [vcp.Controller.0.NetworkConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:47Z [vcp.Controller.0.NetIpMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.InternalApiPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.StoragePort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.TenantPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.ManagementPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.NetIpMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:48Z [vcp.Controller.1.NetworkConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:49Z [vcp.Controller.0.NetIpMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:49Z [vcp.Controller.0.NetworkConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:49Z [vcp.Controller.0.ControllerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:49Z [vcp.Controller.0.NetworkDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:49Z [vcp.Controller.0.ControllerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:50Z [vcp.Controller.1.NetIpMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:50Z [vcp.Controller.1.NetworkConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:04:50Z [vcp.Controller.1.ControllerConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:50Z [vcp.Controller.1.NetworkDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:04:50Z [vcp.Controller.1.ControllerConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.NovaCompute]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.StoragePort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.NetHostMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.ManagementPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.NetHostMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.TenantPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.PreNetworkConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.PreNetworkConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:05Z [vcp.Compute.0.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.StoragePort]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.ExternalPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.TenantPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.ManagementPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.InternalApiPort]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.NetworkConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:07Z [vcp.Compute.0.NetIpMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:08Z [vcp.Compute.0.NetworkConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:08Z [vcp.Compute.0.NetIpMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:05:08Z [vcp.Compute.0.NetworkDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:08Z [vcp.Compute.0.NovaComputeConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:05:09Z [vcp.Compute.0.NovaComputeConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:42Z [vcp.Controller.1.NetworkDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 4e175a38-86df-4a98-b407-942d5b6065de succeeded
+2018-12-11 21:10:43Z [vcp.Controller.1.NetworkDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:43Z [vcp.Controller.1.UpdateDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:43Z [vcp.Controller.1.ControllerUpgradeInitDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:43Z [vcp.Controller.1.NodeTLSCAData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:48Z [vcp.Controller.1.ControllerUpgradeInitDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 4db5392e-b761-4a91-ad75-a66a91608185 succeeded
+2018-12-11 21:10:48Z [vcp.Controller.1.ControllerUpgradeInitDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:49Z [vcp.Controller.1.UpdateDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 4664e864-b2a8-4a51-8882-ff3770e6bb60 succeeded
+2018-12-11 21:10:49Z [vcp.Controller.1.UpdateDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:49Z [vcp.Controller.1.ControllerDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:52Z [vcp.Controller.0.NetworkDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 5561ade2-c8f8-477e-9321-77854fd13e3e succeeded
+2018-12-11 21:10:52Z [vcp.Controller.0.NetworkDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:52Z [vcp.Controller.0.ControllerUpgradeInitDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:52Z [vcp.Controller.0.NodeTLSCAData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:53Z [vcp.Controller.0.UpdateDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:56Z [vcp.Controller.1.NodeTLSCAData]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:56Z [vcp.Controller.1.NodeTLSData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:57Z [vcp.Controller.0.ControllerUpgradeInitDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 8d0661a0-35b0-4af2-92ab-d266592411ca succeeded
+2018-12-11 21:10:57Z [vcp.Controller.0.ControllerUpgradeInitDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:58Z [vcp.Controller.1.ControllerDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment af2cdd9b-b787-455b-be18-3b6680992a8a succeeded
+2018-12-11 21:10:58Z [vcp.Controller.1.ControllerDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:10:59Z [vcp.Controller.1.ControllerExtraConfigPre]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:59Z [vcp.Controller.1.SshHostPubKey]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:10:59Z [vcp.Controller.0.UpdateDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment cb8b6996-9c6c-4757-8d36-361e5b512d8b succeeded
+2018-12-11 21:11:00Z [vcp.Controller.0.UpdateDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:00Z [vcp.Controller.0.ControllerDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:00Z [vcp.Controller.1.ControllerExtraConfigPre]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:07Z [vcp.Controller.0.NodeTLSCAData]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:07Z [vcp.Controller.0.NodeTLSData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:07Z [vcp.Controller.0.ControllerDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment b802887c-4474-4249-a4ea-42ee8fca1abd succeeded
+2018-12-11 21:11:08Z [vcp.Controller.0.ControllerDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:08Z [vcp.Controller.0.ControllerExtraConfigPre]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:08Z [vcp.Controller.0.SshHostPubKey]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:08Z [vcp.Controller.1.NodeTLSData]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:08Z [vcp.Controller.1.NodeExtraConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:09Z [vcp.Controller.0.ControllerExtraConfigPre]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:10Z [vcp.Controller.1.SshHostPubKey]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:10Z [vcp.Controller.1.NodeExtraConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:10Z [vcp.Controller.1]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:11:11Z [vcp.Controller.1]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:17Z [vcp.Controller.0.NodeTLSData]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:17Z [vcp.Controller.0.NodeExtraConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:19Z [vcp.Controller.0.NodeExtraConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:20Z [vcp.Controller.0.SshHostPubKey]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:20Z [vcp.Controller.0]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:11:20Z [vcp.Controller.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:20Z [vcp.Controller]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-12-11 21:11:21Z [vcp.Controller]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:22Z [vcp.ControllerServers]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:22Z [vcp.ControllerServers]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:22Z [vcp.AllNodesValidationConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:22Z [vcp.ControllerNetworkHostnameMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:22Z [vcp.ControllerNetworkHostnameMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:22Z [vcp.ControllerIpListMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:23Z [vcp.AllNodesValidationConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:11:23Z [vcp.AllNodesValidationConfig.AllNodesValidationsImpl]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:23Z [vcp.AllNodesValidationConfig.AllNodesValidationsImpl]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:23Z [vcp.AllNodesValidationConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:11:23Z [vcp.ControllerIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:11:23Z [vcp.ControllerIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:23Z [vcp.ControllerIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:24Z [vcp.AllNodesValidationConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:24Z [vcp.ControllerIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:11:24Z [vcp.ControllerIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 21:11:24Z [vcp.ControllerIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:11:25Z [vcp.ControllerIpListMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:04Z [vcp.Compute.0.NetworkDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 010ce19b-153f-44a7-9712-c06553e0e80d succeeded
+2018-12-11 21:18:05Z [vcp.Compute.0.NetworkDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:05Z [vcp.Compute.0.NovaComputeUpgradeInitDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:05Z [vcp.Compute.0.UpdateDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:05Z [vcp.Compute.0.NodeTLSCAData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:09Z [vcp.Compute.0.NovaComputeUpgradeInitDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 8f2481a1-7d30-4f1a-a955-9837c759ace9 succeeded
+2018-12-11 21:18:09Z [vcp.Compute.0.NovaComputeUpgradeInitDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:10Z [vcp.Compute.0.UpdateDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 6cbcd8dd-2dd8-4ab3-8cdf-12948109e42c succeeded
+2018-12-11 21:18:10Z [vcp.Compute.0.UpdateDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:10Z [vcp.Compute.0.NovaComputeDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:17Z [vcp.Compute.0.NodeTLSCAData]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:18Z [vcp.Compute.0.NovaComputeDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 4f1804dc-bee8-4e08-8fb1-6293638ead9b succeeded
+2018-12-11 21:18:19Z [vcp.Compute.0.NovaComputeDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:19Z [vcp.Compute.0.ComputeExtraConfigPre]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:19Z [vcp.Compute.0.SshHostPubKey]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:20Z [vcp.Compute.0.ComputeExtraConfigPre]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:20Z [vcp.Compute.0.NodeExtraConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:22Z [vcp.Compute.0.NodeExtraConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:28Z [vcp.Compute.0.SshHostPubKey]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:28Z [vcp.Compute.0]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:28Z [vcp.Compute.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:28Z [vcp.Compute]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2018-12-11 21:18:28Z [vcp.Compute]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:29Z [vcp.BlacklistedIpAddresses]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.ServerIdMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.hostsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.BlacklistedIpAddresses]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:29Z [vcp.ServerIdMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:29Z [vcp.SshKnownHostsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.ServerOsCollectConfigData]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.ComputeServers]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.ComputeServers]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:29Z [vcp.ServerOsCollectConfigData]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:29Z [vcp.ComputeNetworkHostnameMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:29Z [vcp.ComputeNetworkHostnameMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:29Z [vcp.ComputeIpListMap]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:30Z [vcp.hostsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:30Z [vcp.hostsConfig.hostsConfigImpl]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:30Z [vcp.BlacklistedHostnames]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:30Z [vcp.hostsConfig.hostsConfigImpl]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:30Z [vcp.BlacklistedHostnames]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:30Z [vcp.hostsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:30Z [vcp.SshKnownHostsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:30Z [vcp.SshKnownHostsConfig.SSHKnownHostsConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:30Z [vcp.DeployedServerEnvironment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:30Z [vcp.SshKnownHostsConfig.SSHKnownHostsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:30Z [vcp.DeployedServerEnvironment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:30Z [vcp.SshKnownHostsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:30Z [vcp.ComputeIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:30Z [vcp.ComputeIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:30Z [vcp.ComputeIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:31Z [vcp.hostsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:31Z [vcp.SshKnownHostsConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:31Z [vcp.BlockStorageHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.CephStorageHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ComputeHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ControllerHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ObjectStorageHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ObjectStorageSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ControllerSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.BlockStorageSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.CephStorageSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ComputeSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ComputeIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:31Z [vcp.ComputeIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:31Z [vcp.ComputeIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:32Z [vcp.ControllerHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:32Z [vcp.CephStorageHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:32Z [vcp.ComputeHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:32Z [vcp.ComputeIpListMap]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:32Z [vcp.ControllerHostsDeployment.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:32Z [vcp.ControllerSshKnownHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:32Z [vcp.ComputeSshKnownHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:32Z [vcp.ComputeHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:32Z [vcp.ComputeSshKnownHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:32Z [vcp.ControllerSshKnownHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:32Z [vcp.BlockStorageHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:33Z [vcp.ObjectStorageHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:33Z [vcp.BlockStorageSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:33Z [vcp.ObjectStorageSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:33Z [vcp.CephStorageSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:33Z [vcp.ControllerHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:33Z [vcp.allNodesConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:33Z [vcp.ControllerSshKnownHostsDeployment.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:35Z [vcp.allNodesConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:18:35Z [vcp.allNodesConfig.allNodesConfigImpl]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:35Z [vcp.allNodesConfig.allNodesConfigImpl]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:36Z [vcp.allNodesConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:36Z [vcp.allNodesConfig]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:37Z [vcp.ControllerHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 8a163dbe-be0b-402e-b510-0d9f0b27f020 succeeded
+2018-12-11 21:18:38Z [vcp.ControllerHostsDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:38Z [vcp.ControllerSshKnownHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 71c34290-b40d-4634-b7cf-fdf1e43d18ea succeeded
+2018-12-11 21:18:39Z [vcp.ControllerSshKnownHostsDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:45Z [vcp.ComputeHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 2cb8c1f6-c409-4fcd-8fcd-304bde8ca2cb succeeded
+2018-12-11 21:18:45Z [vcp.ComputeHostsDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:45Z [vcp.ComputeHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:46Z [vcp.ComputeSshKnownHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 7f7c436d-a3cd-4126-aed1-2a37030ef569 succeeded
+2018-12-11 21:18:46Z [vcp.ComputeHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:47Z [vcp.ComputeSshKnownHostsDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:47Z [vcp.ComputeSshKnownHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:47Z [vcp.ComputeSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:57Z [vcp.ControllerHostsDeployment.1]: SIGNAL_IN_PROGRESS  Signal: deployment b670b842-7dc0-456d-b0fd-8c81be19bf61 succeeded
+2018-12-11 21:18:58Z [vcp.ControllerSshKnownHostsDeployment.1]: SIGNAL_IN_PROGRESS  Signal: deployment e17ec0c2-2a8b-481b-9090-f72e6a10f780 succeeded
+2018-12-11 21:18:58Z [vcp.ControllerHostsDeployment.1]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:58Z [vcp.ControllerHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:58Z [vcp.ControllerHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:59Z [vcp.ControllerSshKnownHostsDeployment.1]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:59Z [vcp.ControllerSshKnownHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:18:59Z [vcp.ControllerSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:18:59Z [vcp.ObjectStorageAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:59Z [vcp.CephStorageAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:59Z [vcp.ComputeAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:59Z [vcp.BlockStorageAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:18:59Z [vcp.ControllerAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:00Z [vcp.ComputeAllNodesDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:19:00Z [vcp.ComputeAllNodesDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:00Z [vcp.ControllerAllNodesDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:19:01Z [vcp.ControllerAllNodesDeployment.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:01Z [vcp.ObjectStorageAllNodesDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:01Z [vcp.CephStorageAllNodesDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:01Z [vcp.BlockStorageAllNodesDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:01Z [vcp.BlockStorageAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:01Z [vcp.ObjectStorageAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:01Z [vcp.CephStorageAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:02Z [vcp.ControllerAllNodesDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:03Z [vcp.BlockStorageAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:03Z [vcp.CephStorageAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:03Z [vcp.ObjectStorageAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:11Z [vcp.ControllerAllNodesDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 039a851f-781d-430d-b925-0109a7086b2a succeeded
+2018-12-11 21:19:12Z [vcp.ControllerAllNodesDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:18Z [vcp.ComputeAllNodesDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 45dc2d24-db1b-4dec-b19c-00d203c7b86c succeeded
+2018-12-11 21:19:18Z [vcp.ComputeAllNodesDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:18Z [vcp.ComputeAllNodesDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:19:19Z [vcp.ComputeAllNodesDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:19Z [vcp.ComputeAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:20Z [vcp.ComputeAllNodesValidationDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:19:20Z [vcp.ComputeAllNodesValidationDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:30Z [vcp.ControllerAllNodesDeployment.1]: SIGNAL_IN_PROGRESS  Signal: deployment 254a5004-bcd8-4810-a537-db8f17e856da succeeded
+2018-12-11 21:19:31Z [vcp.ControllerAllNodesDeployment.1]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:31Z [vcp.ControllerAllNodesDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-11 21:19:31Z [vcp.ControllerAllNodesDeployment]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:31Z [vcp.ControllerAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:31Z [vcp.UpdateWorkflow]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:31Z [vcp.UpdateWorkflow]: CREATE_COMPLETE  state changed
+2018-12-11 21:19:32Z [vcp.ControllerAllNodesValidationDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-11 21:19:32Z [vcp.ControllerAllNodesValidationDeployment.1]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:33Z [vcp.ControllerAllNodesValidationDeployment.0]: CREATE_IN_PROGRESS  state changed
+2018-12-11 21:19:44Z [vcp.ControllerAllNodesValidationDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 671e5179-ee41-4da0-85a8-e9e3a27e4efb succeeded
+2018-12-11 21:19:44Z [vcp.ControllerAllNodesValidationDeployment.0]: CREATE_COMPLETE  state changed
+2018-12-11 21:30:19Z [vcp.ComputeAllNodesValidationDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 30bfea4d-b1e3-40bf-8064-10f1ddf4a73a failed (1)
+2018-12-11 21:30:20Z [vcp.ComputeAllNodesValidationDeployment.0]: CREATE_FAILED  Error: resources[0]: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 1
+2018-12-11 21:30:20Z [vcp.ComputeAllNodesValidationDeployment]: CREATE_FAILED  Resource CREATE failed: Error: resources[0]: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 1
+2018-12-11 21:30:20Z [vcp.ComputeAllNodesValidationDeployment]: CREATE_FAILED  Error: resources.ComputeAllNodesValidationDeployment.resources[0]: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 1
+2018-12-11 21:30:20Z [vcp]: CREATE_FAILED  Resource CREATE failed: Error: resources.ComputeAllNodesValidationDeployment.resources[0]: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 1
+
+ Stack vcp CREATE_FAILED 
+
+vcp.ComputeAllNodesValidationDeployment.0:
+  resource_type: OS::Heat::StructuredDeployment
+  physical_resource_id: 30bfea4d-b1e3-40bf-8064-10f1ddf4a73a
+  status: CREATE_FAILED
+  status_reason: |
+    Error: resources[0]: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 1
+  deploy_stdout: |
+    ...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41Heat Stack create failed.
+Heat Stack create failed.
+ failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    Ping to 192.168.0.41 failed. Retrying...
+    FAILURE
+    (truncated, view all with --long)
+  deploy_stderr: |
+    192.168.0.41 is not pingable. Local Network: 192.168.0.0/24

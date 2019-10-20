@@ -1,0 +1,25 @@
+heat_template_version: 2015-04-30
+
+description: Simple template to create dcnm project and user
+
+resources:
+
+  dcnm_project:
+    type: OS::Keystone::Project 
+    properties:
+      name: "dcnm_project"
+      domain: "default"
+      description: "DCNM project"
+
+  dcnm_user:
+     type: OS::Keystone::User
+     properties:
+       name: "dcnm_user"
+       domain: "default"
+       description: "DCNM user"
+       default_project: { get_resource: dcnm_project }
+       password: "dcnm"
+       roles:
+         - role: "heat_stack_owner"
+       project: { get_resource: dcnm_project }
+    

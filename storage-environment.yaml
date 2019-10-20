@@ -1,0 +1,36 @@
+parameter_defaults:
+  CinderEnableIscsiBackend: false
+  CinderEnableRbdBackend: false
+  CinderBackupBackend: swift
+#  CinderEnableNfsBackend: true
+  CinderEnableNfsBackend: false
+  NovaEnableRbdBackend: false
+  GlanceBackend: file
+  GnocchiBackend: file
+
+
+#  #### GLANCE NFS SETTINGS ####
+#  GlanceNfsEnabled: true
+#  GlanceNfsShare: '10.30.2.244:/mnt/glance'
+#  GlanceNfsOptions: 'rw,sync,context=system_u:object_r:glance_var_lib_t:s0'
+#
+#  #### CINDER NFS SETTINGS ####
+#  CinderNfsServers: '10.30.2.244:/mnt/cinder'
+#  CinderNfsMountOptions: 'rw,sync,context=system_u:object_r:cinder_var_lib_t:s0'
+
+#  For versions after Kilo/OSP7
+#  controllerExtraConfig:
+#    cinder_user_enabled_backends: ['tripleo_nfs','solidfire']
+#    cinder::config::cinder_config:
+#      solidfire/volume_driver:
+#      value: cinder.volume.drivers.solidfire.SolidFireDriver
+#      solidfire/san_ip:
+#      value: 192.168.5.30
+#      solidfire/san_login:
+#      value: openstack-ntvs
+#      solidfire/san_password:
+#      value: Solidfire123!
+#      solidfire/volume_backend_name:
+#      value: SolidFire
+#      solidfire/sf_api_port:
+#      value: 443

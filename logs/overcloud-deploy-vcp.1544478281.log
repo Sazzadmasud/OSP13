@@ -1,0 +1,97 @@
+Waiting for messages on queue 'tripleo' with no timeout.
+Started Mistral Workflow tripleo.validations.v1.check_pre_deployment_validations. Execution ID: 1d16b304-abe2-4e6b-9588-f6e048ffeada
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: fa644364-0081-4157-83fe-b639b462609f
+Plan updated.
+Processing templates in the directory /tmp/tripleoclient-UvH2IZ/tripleo-heat-templates
+Started Mistral Workflow tripleo.plan_management.v1.get_deprecated_parameters. Execution ID: 9bb4800b-d322-4aec-980b-0d418fd28989
+WARNING: Following parameters are deprecated and still defined. Deprecated parameters will be removed soon!
+  HostCpusList
+  NovaComputeIPs
+WARNING: Following parameters are defined but not used in plan. Could be possible that parameter is valid but currently not used.
+  GlanceIPv6
+  RamWeightMultiplier
+  DiskWeightMultiplier
+  DockerMysqlClientConfigImage
+  CephIPv6
+  MongoDbIPv6
+  NeutronSriovNumVFs
+  NeutronSupportedPCIVendorDevs
+  NeutronPhysicalDevMappings
+  CinderBackupBackend
+  IOOpsWeightMultiplier
+Deploying templates in the directory /tmp/tripleoclient-UvH2IZ/tripleo-heat-templates
+Started Mistral Workflow tripleo.deployment.v1.deploy_plan. Execution ID: 8bdc39bb-9d6d-497a-b9d1-49fa7df3805c
+2018-12-10 21:48:48Z [vcp]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:48:49Z [vcp.RabbitCookie]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:49Z [vcp.RabbitCookie]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:50Z [vcp.ServiceNetMap]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:51Z [vcp.ServiceNetMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:48:51Z [vcp.ServiceNetMap.ServiceNetMapValue]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:51Z [vcp.ServiceNetMap.ServiceNetMapValue]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:51Z [vcp.ServiceNetMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-10 21:48:51Z [vcp.DeploymentServerBlacklistDict]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:51Z [vcp.DeploymentServerBlacklistDict]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:52Z [vcp.ServiceNetMap]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:52Z [vcp.HorizonSecret]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:52Z [vcp.HorizonSecret]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:53Z [vcp.HeatAuthEncryptionKey]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:53Z [vcp.HeatAuthEncryptionKey]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:54Z [vcp.MysqlRootPassword]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:54Z [vcp.MysqlRootPassword]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:55Z [vcp.Networks]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:56Z [vcp.Networks]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:48:56Z [vcp.Networks.ManagementNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:56Z [vcp.PcsdPassword]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:56Z [vcp.Networks.ManagementNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:56Z [vcp.PcsdPassword]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:56Z [vcp.DefaultPasswords]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:57Z [vcp.DefaultPasswords]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:57Z [vcp.Networks.NetworkExtraConfig]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:57Z [vcp.Networks.NetworkExtraConfig]: CREATE_COMPLETE  state changed
+2018-12-10 21:48:58Z [vcp.Networks.InternalApiNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:59Z [vcp.Networks.StorageNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:48:59Z [vcp.Networks.InternalApiNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:48:59Z [vcp.Networks.InternalApiNetwork.InternalApiNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:00Z [vcp.Networks.TenantNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:00Z [vcp.Networks.StorageNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:49:00Z [vcp.Networks.StorageNetwork.StorageNetwork]: CREATE_IN_PROGRESS  state cHeat Stack create failed.
+Heat Stack create failed.
+hanged
+2018-12-10 21:49:01Z [vcp.Networks.InternalApiNetwork.InternalApiNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:01Z [vcp.Networks.StorageMgmtNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:01Z [vcp.Networks.InternalApiNetwork.InternalApiSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:01Z [vcp.Networks.TenantNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:49:01Z [vcp.Networks.TenantNetwork.TenantNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:02Z [vcp.Networks.StorageNetwork.StorageNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:02Z [vcp.Networks.ExternalNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:02Z [vcp.Networks.StorageNetwork.StorageSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:02Z [vcp.Networks.StorageMgmtNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2018-12-10 21:49:02Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtNetwork]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:03Z [vcp.Networks.InternalApiNetwork.InternalApiSubnet]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:03Z [vcp.Networks.InternalApiNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-10 21:49:03Z [vcp.Networks.ExternalNetwork]: CREATE_FAILED  resources.ExternalNetwork: Property error: resources.ExternalSubnet.properties.cidr: Error validating value '2607:f160:f:f001::::/64': Invalid net cidr invalid IPNetwork 2607:f160:f:f001::::/64 
+2018-12-10 21:49:03Z [vcp.Networks]: CREATE_FAILED  Resource CREATE failed: resources.ExternalNetwork: Property error: resources.ExternalSubnet.properties.cidr: Error validating value '2607:f160:f:f001::::/64': Invalid net cidr invalid IPNetwork 2607:f160:f:f001::::/64 
+2018-12-10 21:49:03Z [vcp.Networks]: CREATE_FAILED  resources.ExternalNetwork: resources.Networks.Property error: resources.ExternalSubnet.properties.cidr: Error validating value '2607: f160: f: f001: : : : /64': Invalid net cidr invalid IPNetwork 2607: f160: f: f001: : : : /64
+2018-12-10 21:49:03Z [vcp]: CREATE_FAILED  Resource CREATE failed: resources.ExternalNetwork: resources.Networks.Property error: resources.ExternalSubnet.properties.cidr: Error validating value '2607: f160: f: f001: : : : /64': Invalid net cidr invalid IPNetwork 2607: f160: f: f001: : : : /64
+2018-12-10 21:49:03Z [vcp.Networks.TenantNetwork.TenantNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:03Z [vcp.Networks.InternalApiNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:03Z [vcp.Networks.TenantNetwork.TenantSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:04Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:04Z [vcp.Networks.StorageMgmtNetwork.StorageMgmtSubnet]: CREATE_IN_PROGRESS  state changed
+2018-12-10 21:49:04Z [vcp.Networks.StorageNetwork.StorageSubnet]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:05Z [vcp.Networks.StorageNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-10 21:49:05Z [vcp.Networks.TenantNetwork.TenantSubnet]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:05Z [vcp.Networks.TenantNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2018-12-10 21:49:05Z [vcp.Networks.StorageNetwork]: CREATE_COMPLETE  state changed
+2018-12-10 21:49:05Z [vcp.Networks.TenantNetwork]: CREATE_COMPLETE  state changed
+
+ Stack vcp CREATE_FAILED 
+
+vcp.Networks.ExternalNetwork:
+  resource_type: OS::TripleO::Network::External
+  physical_resource_id: 
+  status: CREATE_FAILED
+  status_reason: |
+    resources.ExternalNetwork: Property error: resources.ExternalSubnet.properties.cidr: Error validating value '2607:f160:f:f001::::/64': Invalid net cidr invalid IPNetwork 2607:f160:f:f001::::/64 

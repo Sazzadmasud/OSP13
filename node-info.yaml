@@ -1,0 +1,7 @@
+parameter_defaults:
+  OvercloudControllerFlavor: control
+  OvercloudComputeFlavor: compute
+#  OvercloudCephStorageFlavor: ceph-storage
+  ControllerCount: 2
+  ComputeCount: 3
+#  CephStorageCount: 3

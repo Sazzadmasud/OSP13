@@ -1,0 +1,109 @@
+heat_template_version: 2015-04-30
+
+description: >
+  Template to setup network and deploy a single dcnm instance
+
+resources:
+
+  imn_net:
+    type: OS::Neutron::ProviderNet
+    properties:
+      name: "imn_net"
+      physical_network: "datacentre"
+      network_type: "vlan"
+      segmentation_id: "11"
+      shared: True
+
+  imn_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      name: "imn_subnet"
+      network_id: { get_resource: imn_net }
+      cidr: "10.139.198.0/24"
+      allocation_pools: [{"start":"10.139.198.31", "end":"10.139.198.40" }]
+      enable_dhcp: False
+  
+  poap_net:
+    type: OS::Neutron::ProviderNet
+    properties:
+      name: "poap_net"
+      physical_network: "datacentre"
+      network_type: "vlan"
+      segmentation_id: "110"
+
+  poap_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      name: "poap_subnet"
+      network_id: { get_resource: poap_net }
+      cidr: "172.31.33.0/24"
+      allocation_pools: [{"start":"172.31.33.31", "end":"172.31.33.40" }]
+      enable_dhcp: False
+
+  dcnm_security:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      name: "dcnm_security"
+      rules:
+        - protocol: tcp
+          direction: "ingress"
+          remote_ip_prefix: 0.0.0.0/0
+          port_range_min: 22
+          port_range_max: 22
+        - protocol: tcp
+          direction: "ingress"
+          remote_ip_prefix: 0.0.0.0/0
+          port_range_min: 443
+          port_range_max: 443
+        - protocol: icmp
+          direction: "ingress"
+          remote_ip_prefix: 0.0.0.0/0
+
+  imn_port:
+    type: OS::Neutron::Port
+    properties:
+      network_id: { get_resource: imn_net }
+      security_groups:
+        - default
+        - { get_resource: dcnm_security }
+      fixed_ips: [{subnet_id: { get_resource: imn_subnet }, ip_address: "10.139.198.31"}]
+      mac_address: "fa:16:3e:00:00:00"
+      #mac_address: "fa:16:3e:34:1e:83"
+ 
+  poap_port:
+    type: OS::Neutron::Port
+    properties:
+      network_id: { get_resource: poap_net }
+      security_groups:
+        - default
+        - { get_resource: dcnm_security }
+      fixed_ips: [{subnet_id: { get_resource: poap_subnet }, ip_address: "172.31.33.31"}]
+      mac_address: "fa:16:3e:00:00:02"
+      #mac_address: "fa:16:3e:af:ca:63" 
+
+#  dcnm_volume:
+#    type: OS::Cinder::Volume
+#    properties:
+#      size: 10
+#      name: "dcnm_volume"
+
+  dcnm_instance:
+    type: OS::Nova::Server
+    properties:
+      name: "dcnm_instance"
+      flavor: dcnm
+      image: dcnm-wllab
+      networks: 
+        - port: { get_resource: imn_port }
+        - port: { get_resource: poap_port }
+
+#  volume_attachment:
+#    type: OS::Cinder::VolumeAttachment
+#    properties:
+#      volume_id: { get_resource: dcnm_volume }
+#      instance_uuid: { get_resource: dcnm_instance }
+
+outputs:
+  instance_ip:
+    description: IP address of the deployed instance
+    value: { get_attr: [dcnm_instance, first_address] }

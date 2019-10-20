@@ -1,0 +1,7 @@
+parameter_defaults:
+  SSLCertificate: |
+{ enter certificate here }
+  SSLIntermediateCertificate: ''
+  SSLKey: |
+resource_registry:
+  OS::TripleO::NodeTLSData: ./openstack-tripleo-heat-templates/puppet/extraconfig/tls/tls-cert-inject.yaml
